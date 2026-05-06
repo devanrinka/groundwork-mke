@@ -36,7 +36,6 @@
     }
 
     .top-bar { height: 3px; background: var(--green); }
-
     .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
     header {
@@ -202,6 +201,18 @@
       margin-bottom: 10px;
     }
 
+    .card-credits {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+
+    .card-credits span {
+      font-weight: 500;
+      color: var(--text);
+    }
+
     .card-summary {
       font-size: 13px;
       color: var(--text-muted);
@@ -254,7 +265,6 @@
     }
 
     .archive-item:hover { background: #f0efe9; }
-
     .archive-item.active { border-color: var(--green); }
 
     .archive-item-date { font-size: 13px; font-weight: 500; }
@@ -368,6 +378,11 @@
 
   function renderCard(p) {
     const t = TYPE[p.type] || TYPE['ground-up'];
+    const credits = (p.developer || p.architect) ? `
+      <div class="card-credits">
+        ${p.developer ? `<span>Developer:</span> ${p.developer}<br>` : ''}
+        ${p.architect ? `<span>Architect:</span> ${p.architect}` : ''}
+      </div>` : '';
     return `
       <div class="card" style="border-left-color:${t.bc}">
         <div class="card-top">
@@ -377,6 +392,7 @@
         <div class="card-name">${p.name}</div>
         <div class="card-location">${p.location}</div>
         <div class="card-scale" style="background:${t.bg};color:${t.tc}">${p.scale || ''}</div>
+        ${credits}
         <div class="card-summary">${p.summary}</div>
         <div class="card-footer">
           <span class="card-source">${p.source}</span>
@@ -429,7 +445,7 @@
         const archiveList = document.getElementById('archive-list');
         archiveSection.style.display = 'block';
 
-        data.editions.slice(1).forEach((ed, i) => {
+        data.editions.slice(1).forEach((ed) => {
           const item = document.createElement('div');
           item.className = 'archive-item';
           item.innerHTML = `<span class="archive-item-date">${ed.editionDate}</span><span class="archive-item-count">${ed.projectCount} projects</span>`;
