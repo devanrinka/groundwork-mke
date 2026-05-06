@@ -41,7 +41,7 @@ async function fetchArticles() {
 }
 
 async function extractProjects(articles) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   const articleText = articles.slice(0, 30).map((a, i) =>
     `[${i}] SOURCE: ${a.source}\nTITLE: ${a.title}\nSNIPPET: ${a.snippet}\nDATE: ${a.date}\nURL: ${a.link}`
