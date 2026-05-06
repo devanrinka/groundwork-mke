@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-05-06T19:10:55.619Z",
+      "editionDate": "May 6, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Bank of America South Side Branch",
+          "type": "ground-up",
+          "location": "South Side, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "Bank of America",
+          "architect": null,
+          "scale": "Commercial building (replacing a Dollar Tree)",
+          "summary": "Bank of America plans to replace an existing Dollar Tree store on Milwaukee's South Side with a new branch. This marks the nation's second-largest bank's entry into the Milwaukee market at several locations, indicating significant commercial expansion.",
+          "source": "Urban Milwaukee",
+          "date": "May 06, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/06/bank-of-america-plans-to-replace-dollar-tree-on-south-side/"
+        },
+        {
+          "name": "Kingdom Faith Senior Housing Complex",
+          "type": "ground-up",
+          "location": "Milwaukee (near city border), WI",
+          "status": "Announced",
+          "developer": "Kingdom Faith Church",
+          "architect": null,
+          "scale": "181 units · senior apartments · memory care center · church expansion",
+          "summary": "Kingdom Faith Church is planning a major ground-up development near Milwaukee's city border. The complex will feature 181 senior apartment units, a memory care center, and an expanded church facility, addressing local senior housing and community needs.",
+          "source": "Urban Milwaukee",
+          "date": "May 06, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/06/kingdom-faith-church-plans-181-unit-senior-housing-complex/"
+        },
+        {
+          "name": "Milwaukee Affordable Housing Conversion Proposal",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Public review open",
+          "developer": null,
+          "architect": null,
+          "scale": "Conversion of two 'luxury' residential complexes",
+          "summary": "A proposal has been submitted to the Milwaukee City Council to convert two existing 'luxury' residential complexes into affordable housing units. This major renovation project requires city approval and is currently undergoing public review, with the Council reportedly poised to reject it.",
+          "source": "Urban Milwaukee",
+          "date": "May 05, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/05/council-poised-to-reject-unusual-affordable-housing-proposal/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-06T15:07:52.822Z",
       "editionDate": "May 6, 2026",
       "projectCount": 4,
