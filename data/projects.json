@@ -1,3 +1,55 @@
 {
-  "editions": []
+  "editions": [
+    {
+      "date": "2026-05-06T15:07:52.822Z",
+      "editionDate": "May 6, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Affordable Housing Conversion Proposal",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Council Poised To Reject",
+          "scale": "Two existing apartment complexes",
+          "summary": "A developer is seeking city approval to convert two existing 'luxury' apartment complexes in Milwaukee into affordable housing units, a proposal the city council is poised to reject.",
+          "source": "Urban Milwaukee",
+          "date": "May 05, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/05/council-poised-to-reject-unusual-affordable-housing-proposal/"
+        },
+        {
+          "name": "New Milwaukee Library",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Announced",
+          "scale": "Replacement for aging branch library",
+          "summary": "A new library branch is being planned for a key location in Milwaukee to replace an aging existing facility, a project the city has sought for seven years.",
+          "source": "Urban Milwaukee",
+          "date": "May 04, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/04/new-library-planned-for-key-milwaukee-location/"
+        },
+        {
+          "name": "Versiti Blood Research Institute expansion",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Topping off ceremony",
+          "scale": "$79 million expansion",
+          "summary": "The Versiti Blood Research Institute in Milwaukee celebrated a topping-off ceremony for its $79 million facility expansion, marking a significant construction milestone.",
+          "source": "BizTimes Milwaukee",
+          "date": "May 05, 2026",
+          "link": "https://biztimes.com/see-photos-from-versiti-blood-research-institute-topping-off-ceremony/"
+        },
+        {
+          "name": "Fellowship Village",
+          "type": "ground-up",
+          "location": "86th and Good Hope Road, Milwaukee, WI",
+          "status": "Public review open",
+          "scale": "190 units of market-rate luxury apartments",
+          "summary": "Christian Faith Fellowship Church proposes building Fellowship Village, a 190-unit market-rate luxury apartment complex for young professionals on Milwaukee's far northwest side, a plan currently facing opposition from local residents.",
+          "source": "BizTimes Milwaukee",
+          "date": "May 05, 2026",
+          "link": "https://biztimes.com/residents-fighting-apartment-development-planned-by-church-at-86th-and-good-hope/"
+        }
+      ]
+    }
+  ]
 }
