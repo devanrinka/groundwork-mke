@@ -41,9 +41,9 @@ async function fetchArticles() {
 }
 
 async function extractProjects(articles) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
 
-  const articleText = articles.map((a, i) =>
+  const articleText = articles.slice(0, 30).map((a, i) =>
     `[${i}] SOURCE: ${a.source}\nTITLE: ${a.title}\nSNIPPET: ${a.snippet}\nDATE: ${a.date}\nURL: ${a.link}`
   ).join('\n\n---\n\n');
 
@@ -64,7 +64,7 @@ EXCLUDE:
 - Projects clearly outside 50 miles of Milwaukee
 - Opinion pieces, market reports, or trend articles without a named project
 
-For each qualifying project return this exact JSON structure. Return ONLY a raw JSON object — no markdown, no backticks, no explanation:
+Return ONLY a raw JSON object, no markdown, no backticks:
 
 {
   "projects": [
@@ -73,25 +73,30 @@ For each qualifying project return this exact JSON structure. Return ONLY a raw 
       "type": "ground-up" | "renovation" | "master-plan",
       "location": "Neighborhood, City, WI",
       "status": "Plan Commission approved | Permits filed | Groundbreaking | Public review open | Grand opening | Unanimously approved | Announced",
-      "scale": "e.g. 120 units · 15,000 sqft retail  OR  80,000 sqft office  OR  Long-range masterplan",
-      "summary": "2-3 sentences. Plain English. What is being built, where, and why it matters. No marketing language.",
+      "scale": "e.g. 120 units · 15,000 sqft retail",
+      "summary": "2-3 sentences. Plain English. What is being built, where, and why it matters.",
       "source": "Publication name",
-      "date": "Formatted as Mon DD, YYYY",
+      "date": "Mon DD, YYYY",
       "link": "Full article URL"
     }
   ]
 }
 
-If no qualifying projects are found, return: {"projects":[]}
+If no qualifying projects found, return: {"projects":[]}
 
-ARTICLES TO REVIEW:
+ARTICLES:
 ${articleText}`;
 
   try {
-    const result = await model.generateContent(prompt);
+    const timeout = new Promise((_, reject) =>
+      setTimeout(() => reject(new Error('Gemini timed out after 90s')), 90000)
+    );
+    const result = await Promise.race([
+      model.generateContent(prompt),
+      timeout
+    ]);
     const text = result.response.text().trim().replace(/```json|```/g, '').trim();
-    const parsed = JSON.parse(text);
-    return parsed.projects || [];
+    return JSON.parse(text).projects || [];
   } catch (err) {
     console.error('Gemini parse error:', err.message);
     return [];
