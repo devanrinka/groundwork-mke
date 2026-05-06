@@ -13,7 +13,6 @@ const MIN_PROJECTS = 3;
 const RSS_FEEDS = [
   { url: 'https://urbanmilwaukee.com/feed/', name: 'Urban Milwaukee' },
   { url: 'https://biztimes.com/feed/', name: 'BizTimes Milwaukee' },
-  { url: 'https://www.jsonline.com/arcio/rss/', name: 'Milwaukee Journal Sentinel' },
   { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
 ];
 
@@ -73,6 +72,8 @@ Return ONLY a raw JSON object, no markdown, no backticks:
       "type": "ground-up" | "renovation" | "master-plan",
       "location": "Neighborhood, City, WI",
       "status": "Plan Commission approved | Permits filed | Groundbreaking | Public review open | Grand opening | Unanimously approved | Announced",
+      "developer": "Developer or owner name, or null if not mentioned",
+      "architect": "Architecture firm name, or null if not mentioned",
       "scale": "e.g. 120 units · 15,000 sqft retail",
       "summary": "2-3 sentences. Plain English. What is being built, where, and why it matters.",
       "source": "Publication name",
@@ -121,6 +122,11 @@ function buildEmailHTML(projects, editionDate) {
       <div style="font-family:Georgia,'Times New Roman',serif;font-size:17px;font-weight:400;color:#1a1a1a;margin-bottom:3px;line-height:1.3;">${p.name}</div>
       <div style="font-size:12px;color:#777;margin-bottom:6px;">${p.location}</div>
       <div style="display:inline-block;font-size:11px;font-weight:500;background:${t.bg};color:${t.tc};padding:2px 9px;border-radius:4px;margin-bottom:10px;">${p.scale || ''}</div>
+      ${(p.developer || p.architect) ? `
+      <div style="font-size:11px;color:#777;margin-bottom:8px;line-height:1.8;">
+        ${p.developer ? `<span style="font-weight:500;color:#555;">Developer:</span> ${p.developer}<br>` : ''}
+        ${p.architect ? `<span style="font-weight:500;color:#555;">Architect:</span> ${p.architect}` : ''}
+      </div>` : ''}
       <div style="font-size:13px;color:#555;line-height:1.65;border-top:1px solid #f0f0f0;padding-top:10px;margin-bottom:10px;">${p.summary}</div>
       <div style="display:flex;justify-content:space-between;align-items:center;">
         <span style="font-size:11px;color:#aaa;">${p.source} &middot; ${p.date || ''}</span>
