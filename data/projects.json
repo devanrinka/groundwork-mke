@@ -1,6 +1,117 @@
 {
   "editions": [
     {
+      "date": "2026-05-11T19:18:21.223Z",
+      "editionDate": "May 11, 2026",
+      "projectCount": 8,
+      "projects": [
+        {
+          "name": "Clock Tower Farms",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Announced",
+          "developer": "Rockwell Automation",
+          "architect": null,
+          "scale": "Indoor farm",
+          "summary": "An indoor farm named Clock Tower Farms is being established within Rockwell Automation's Milwaukee headquarters. It plans to be operational later this year and will supply fresh produce to Feeding America, representing a significant new commercial use within an existing building.",
+          "source": "Urban Milwaukee",
+          "date": "Mon May 11, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/11/rockwells-indoor-farm-will-supply-fresh-produce-to-feeding-america/"
+        },
+        {
+          "name": "Walker Square Park Improvements",
+          "type": "renovation",
+          "location": "Walker Square Park, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "MKE County Parks",
+          "architect": null,
+          "scale": "Park improvements",
+          "summary": "Milwaukee County Parks is planning new projects and improvements for Walker Square Park on the city's south side. Construction is slated to begin in 2027, indicating a public works project involving significant physical changes to the park.",
+          "source": "Urban Milwaukee",
+          "date": "Sun May 10, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/10/mke-county-parks-plans-new-projects-in-walker-square-park/"
+        },
+        {
+          "name": "Former Walmart Redevelopment",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Planned",
+          "developer": null,
+          "architect": null,
+          "scale": "Self storage, data center, library (commercial scale)",
+          "summary": "A former Walmart building in Milwaukee is planned for redevelopment to include new self-storage and data center facilities. These new commercial uses will accompany a planned new library project, indicating a significant transformation of the site.",
+          "source": "Urban Milwaukee",
+          "date": "Fri May 08, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/08/self-storage-data-center-planned-for-former-walmart/"
+        },
+        {
+          "name": "Soonja's Seoul Pocha",
+          "type": "renovation",
+          "location": "National Avenue, Milwaukee, WI",
+          "status": "Proposed",
+          "developer": null,
+          "architect": null,
+          "scale": "Restaurant/Pub (commercial)",
+          "summary": "Soonja's Seoul Pocha, a new Korean pub and restaurant, is proposed for National Avenue in Milwaukee. The establishment aims to introduce Korean pub culture, traditional food, and trendy cocktails to the city.",
+          "source": "Urban Milwaukee",
+          "date": "Fri May 08, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/08/korean-pub-and-restaurant-for-national-avenue/"
+        },
+        {
+          "name": "Facebook-Meta Data Center",
+          "type": "ground-up",
+          "location": "Beaver Dam, WI",
+          "status": "Regulators Approve Electric Rates",
+          "developer": "Facebook-Meta",
+          "architect": null,
+          "scale": "Large-scale data center",
+          "summary": "Regulators have approved electric rates for the Facebook-Meta data center located in Beaver Dam, WI. This milestone indicates the large-scale commercial project is progressing, despite criticisms regarding transparency during the approval process.",
+          "source": "Urban Milwaukee",
+          "date": "Fri May 08, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/08/with-sharp-criticism-regulators-approve-electric-rates-for-facebook-meta-data-center/"
+        },
+        {
+          "name": "Jefferson County Industrial Development (Wangard)",
+          "type": "ground-up",
+          "location": "Jefferson, Jefferson County, WI",
+          "status": "Announced",
+          "developer": "Wangard Partners",
+          "architect": null,
+          "scale": "17-acre site, 200,000+ sqft facility",
+          "summary": "Wangard Partners is acquiring a 17-acre site in Jefferson, adjacent to the Food & Beverage Innovation Campus, to develop a build-to-suit facility exceeding 200,000 square feet. The Wauwatosa-based developer is actively seeking a single user for this large industrial/commercial project.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon May 11, 2026",
+          "link": "https://biztimes.com/wangard-buying-17-acre-jefferson-county-site-seeking-fab-user/"
+        },
+        {
+          "name": "Forensic Science and Protective Medicine Facility",
+          "type": "ground-up",
+          "location": "Wauwatosa, WI",
+          "status": "Purchased (completed)",
+          "developer": null,
+          "architect": null,
+          "scale": "4-story, 212,000 sqft",
+          "summary": "The State of Wisconsin and Milwaukee County have purchased the new 212,000-square-foot Forensic Science and Protective Medicine Facility in Wauwatosa for over $219 million. This four-story building, which broke ground nearly three years ago, will serve as the Milwaukee Crime Lab and the county's new Medical Examiner’s Office.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon May 11, 2026",
+          "link": "https://biztimes.com/state-of-wisconsin-and-milwaukee-county-buy-new-joint-forensic-facility-for-219-million/"
+        },
+        {
+          "name": "St. Augustine Preparatory Academy North Campus",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Preparing for launch",
+          "developer": "St. Augustine Preparatory Academy",
+          "architect": null,
+          "scale": "K4-12 second campus",
+          "summary": "St. Augustine Preparatory Academy is preparing to launch a new K4-12 Christian north campus in Milwaukee for the upcoming school year. The school recently raised over $2.5 million at its annual gala to support this significant educational expansion.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon May 11, 2026",
+          "link": "https://biztimes.com/aug-prep-gala-raises-more-than-2-5-million-ahead-of-north-campus-launch/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-06T19:10:55.619Z",
       "editionDate": "May 6, 2026",
       "projectCount": 3,
