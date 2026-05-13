@@ -26,9 +26,12 @@ jobs:
 
       - name: Run Groundwork update
         env:
+          env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+          MKE_RECIPIENTS: ${{ secrets.MKE_RECIPIENTS }}
+          MSN_RECIPIENTS: ${{ secrets.MSN_RECIPIENTS }}
+          FLL_RECIPIENTS: ${{ secrets.FLL_RECIPIENTS }}
         run: node scripts/fetch.js
 
       - name: Commit updated data
