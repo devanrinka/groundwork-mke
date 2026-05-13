@@ -29,10 +29,10 @@ const CITIES = {
     dataFile: 'data/madison.json',
     recipients: (process.env.MSN_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
-      { url: 'https://madison.com/feed/', name: 'Wisconsin State Journal' },
-      { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
-      { url: 'https://www.channel3000.com/feed/', name: 'WISC-TV News' },
-    ],
+  { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
+  { url: 'https://isthmus.com/feed/', name: 'Isthmus' },
+  { url: 'https://www.bizjournals.com/madison/feed/latest.rss', name: 'Madison Business Journal' },
+],
   },
   fortlauderdale: {
     name: 'Fort Lauderdale, FL',
@@ -41,8 +41,8 @@ const CITIES = {
     recipients: (process.env.FLL_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
       { url: 'https://therealdeal.com/miami/feed/', name: 'The Real Deal South Florida' },
-      { url: 'https://www.sun-sentinel.com/arcio/rss/', name: 'Sun Sentinel' },
-      { url: 'https://southfloridabusinessjournal.com/feed/', name: 'South Florida Business Journal' },
+      { url: 'https://www.commercialobserver.com/feed/', name: 'Commercial Observer' },
+      { url: 'https://www.thenextmiami.com/feed/', name: 'The Next Miami' },
     ],
   },
 };
