@@ -249,7 +249,7 @@ async function processCity(cityKey, city) {
 
   const html = buildEmailHTML(projects, editionDate, city.name);
   const { error } = await resend.emails.send({
-    from: 'Groundwork <onboarding@resend.dev>',
+    from: 'Groundwork <groundwork@rinka.com>',
     to: city.recipients,
     subject: `Groundwork · ${city.name} · ${editionDate} · ${projects.length} new projects`,
     html,
