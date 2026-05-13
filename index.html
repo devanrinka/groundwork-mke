@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Groundwork · Milwaukee Development Intelligence</title>
+  <title>Groundwork · Development Intelligence</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
@@ -27,280 +27,81 @@
       --card: #ffffff;
     }
 
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      font-size: 15px;
-      line-height: 1.6;
-    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6; }
 
     .top-bar { height: 3px; background: var(--green); }
     .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
 
-    header {
-      padding: 28px 0 20px;
-      border-bottom: 0.5px solid var(--border);
-      margin-bottom: 20px;
-    }
+    header { padding: 28px 0 0; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; }
 
-    .header-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
+    .header-inner { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
 
-    .logo {
-      font-family: 'Playfair Display', serif;
-      font-size: 34px;
-      font-weight: 400;
-      letter-spacing: 0.5px;
-      color: var(--text);
-      line-height: 1;
-    }
-
-    .logo-sub {
-      font-size: 10px;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      margin-top: 6px;
-      font-weight: 300;
-    }
+    .logo { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 400; letter-spacing: 0.5px; color: var(--text); line-height: 1; }
+    .logo-sub { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--text-faint); margin-top: 6px; font-weight: 300; }
 
     .edition-block { text-align: right; }
+    .edition-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); font-weight: 500; }
+    .edition-date { font-size: 14px; font-weight: 500; color: var(--text); margin-top: 3px; }
+    .edition-next { font-size: 11px; color: var(--text-faint); margin-top: 2px; }
 
-    .edition-label {
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--green);
-      font-weight: 500;
+    .city-tabs { display: flex; gap: 0; }
+    .city-tab {
+      font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 400;
+      padding: 10px 20px; border: none; background: transparent;
+      color: var(--text-faint); cursor: pointer; border-bottom: 2px solid transparent;
+      transition: all 0.15s; white-space: nowrap;
     }
+    .city-tab:hover { color: var(--text); }
+    .city-tab.active { color: var(--green); border-bottom-color: var(--green); font-weight: 500; }
 
-    .edition-date {
-      font-size: 14px;
-      font-weight: 500;
-      color: var(--text);
-      margin-top: 3px;
-    }
-
-    .edition-next {
-      font-size: 11px;
-      color: var(--text-faint);
-      margin-top: 2px;
-    }
-
-    .meta-bar {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 12px;
-      color: var(--text-muted);
-      padding: 10px 0;
-      border-bottom: 0.5px solid var(--border);
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
+    .meta-bar { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--text-muted); padding: 10px 0; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; flex-wrap: wrap; }
     .meta-sep { color: var(--border); }
 
-    .filters {
-      display: flex;
-      gap: 6px;
-      margin-bottom: 24px;
-      flex-wrap: wrap;
-    }
-
-    .filter-btn {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 12px;
-      font-weight: 400;
-      padding: 5px 14px;
-      border: 0.5px solid var(--border);
-      border-radius: 20px;
-      background: transparent;
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-
+    .filters { display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
+    .filter-btn { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; padding: 5px 14px; border: 0.5px solid var(--border); border-radius: 20px; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.15s; }
     .filter-btn:hover { border-color: #aaa; color: var(--text); }
-
-    .filter-btn.active {
-      background: var(--text);
-      color: var(--card);
-      border-color: var(--text);
-    }
-
+    .filter-btn.active { background: var(--text); color: var(--card); border-color: var(--text); }
     .filter-count { margin-left: 4px; opacity: 0.5; font-size: 11px; }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-      gap: 12px;
-      margin-bottom: 48px;
-    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin-bottom: 48px; }
 
-    .card {
-      background: var(--card);
-      border: 0.5px solid var(--border);
-      border-left-width: 3px;
-      border-radius: 10px;
-      padding: 16px 18px 14px 18px;
-      transition: box-shadow 0.15s;
-    }
-
+    .card { background: var(--card); border: 0.5px solid var(--border); border-left-width: 3px; border-radius: 10px; padding: 16px 18px 14px 18px; transition: box-shadow 0.15s; }
     .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-
-    .type-badge {
-      font-size: 10px;
-      font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 20px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .card-status {
-      font-size: 11px;
-      color: var(--text-faint);
-      text-align: right;
-      max-width: 120px;
-      line-height: 1.4;
-    }
-
-    .card-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 16px;
-      font-weight: 400;
-      color: var(--text);
-      line-height: 1.3;
-      margin-bottom: 3px;
-    }
-
-    .card-location {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-bottom: 6px;
-    }
-
-    .card-scale {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 500;
-      padding: 2px 9px;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    .card-credits {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-bottom: 10px;
-      line-height: 1.8;
-    }
-
-    .card-credits span {
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .card-summary {
-      font-size: 13px;
-      color: var(--text-muted);
-      line-height: 1.65;
-      border-top: 0.5px solid var(--border);
-      padding-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .card-footer {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .type-badge { font-size: 10px; font-weight: 500; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card-status { font-size: 11px; color: var(--text-faint); text-align: right; max-width: 120px; line-height: 1.4; }
+    .card-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.3; margin-bottom: 3px; }
+    .card-location { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+    .card-scale { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 4px; margin-bottom: 10px; }
+    .card-credits { font-size: 11px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.8; }
+    .card-credits span { font-weight: 500; color: var(--text); }
+    .card-summary { font-size: 13px; color: var(--text-muted); line-height: 1.65; border-top: 0.5px solid var(--border); padding-top: 10px; margin-bottom: 10px; }
+    .card-footer { display: flex; justify-content: space-between; align-items: center; }
     .card-source { font-size: 11px; color: var(--text-faint); }
-
-    .card-link {
-      font-size: 11px;
-      color: var(--green);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
+    .card-link { font-size: 11px; color: var(--green); text-decoration: none; font-weight: 500; }
     .card-link:hover { text-decoration: underline; }
 
     .archive-section { margin-bottom: 48px; }
-
-    .archive-title {
-      font-size: 11px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-faint);
-      font-weight: 500;
-      margin-bottom: 12px;
-    }
-
+    .archive-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-faint); font-weight: 500; margin-bottom: 12px; }
     .archive-list { display: flex; flex-direction: column; gap: 1px; }
-
-    .archive-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 14px;
-      background: var(--card);
-      border: 0.5px solid var(--border);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.1s;
-    }
-
+    .archive-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: var(--card); border: 0.5px solid var(--border); border-radius: 6px; cursor: pointer; transition: background 0.1s; }
     .archive-item:hover { background: #f0efe9; }
     .archive-item.active { border-color: var(--green); }
-
     .archive-item-date { font-size: 13px; font-weight: 500; }
     .archive-item-count { font-size: 12px; color: var(--text-faint); }
 
-    footer {
-      border-top: 0.5px solid var(--border);
-      padding: 20px 0 32px;
-      font-size: 11px;
-      color: var(--text-faint);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    footer { border-top: 0.5px solid var(--border); padding: 20px 0 32px; font-size: 11px; color: var(--text-faint); display: flex; justify-content: space-between; align-items: center; }
 
-    .empty-state {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 48px;
-      color: var(--text-faint);
-      font-size: 14px;
-    }
-
-    .loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      padding: 48px;
-      color: var(--text-faint);
-      font-size: 13px;
-    }
+    .empty-state { grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-faint); font-size: 14px; }
+    .loading { grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-faint); font-size: 13px; }
 
     @media (max-width: 600px) {
       .grid { grid-template-columns: 1fr; }
       .header-inner { flex-direction: column; gap: 12px; }
       .edition-block { text-align: left; }
       footer { flex-direction: column; gap: 8px; text-align: center; }
+      .city-tab { font-size: 12px; padding: 10px 14px; }
     }
   </style>
 </head>
@@ -313,7 +114,7 @@
     <div class="header-inner">
       <div>
         <div class="logo">Groundwork</div>
-        <div class="logo-sub">Milwaukee development intelligence</div>
+        <div class="logo-sub">Development intelligence</div>
       </div>
       <div class="edition-block">
         <div class="edition-label" id="edition-label">Latest edition</div>
@@ -321,10 +122,15 @@
         <div class="edition-next" id="edition-next"></div>
       </div>
     </div>
+    <div class="city-tabs">
+      <button class="city-tab active" data-city="milwaukee">Milwaukee, WI</button>
+      <button class="city-tab" data-city="madison">Madison, WI</button>
+      <button class="city-tab" data-city="fortlauderdale">Fort Lauderdale, FL</button>
+    </div>
   </header>
 
   <div class="meta-bar">
-    <span>50-mile radius</span>
+    <span id="meta-radius">50-mile radius</span>
     <span class="meta-sep">·</span>
     <span id="project-count">Loading...</span>
     <span class="meta-sep">·</span>
@@ -348,20 +154,27 @@
   </div>
 
   <footer>
-    <span>Groundwork · Milwaukee, WI</span>
-    <span>Auto-generated development intelligence</span>
+    <span>Groundwork · Development Intelligence</span>
+    <span>Auto-generated · Updated Mon &amp; Thu</span>
   </footer>
 </div>
 
 <script>
   const TYPE = {
-    'ground-up':  { label: 'Ground-Up',  bg: '#E1F5EE', tc: '#085041', bc: '#1D9E75' },
-    'renovation': { label: 'Renovation', bg: '#FAEEDA', tc: '#633806', bc: '#BA7517' },
-    'master-plan':{ label: 'Master plan',bg: '#E6F1FB', tc: '#0C447C', bc: '#378ADD' }
+    'ground-up':   { label: 'Ground-Up',   bg: '#E1F5EE', tc: '#085041', bc: '#1D9E75' },
+    'renovation':  { label: 'Renovation',  bg: '#FAEEDA', tc: '#633806', bc: '#BA7517' },
+    'master-plan': { label: 'Master plan', bg: '#E6F1FB', tc: '#0C447C', bc: '#378ADD' }
+  };
+
+  const CITIES = {
+    milwaukee:      { file: 'data/milwaukee.json',      radius: '50-mile radius' },
+    madison:        { file: 'data/madison.json',        radius: '40-mile radius' },
+    fortlauderdale: { file: 'data/fortlauderdale.json', radius: '30-mile radius' }
   };
 
   let allProjects = [];
   let activeFilter = 'all';
+  let activeCity = 'milwaukee';
 
   function getNextUpdate() {
     const now = new Date();
@@ -404,11 +217,9 @@
   function renderGrid(projects) {
     const grid = document.getElementById('grid');
     const filtered = activeFilter === 'all' ? projects : projects.filter(p => p.type === activeFilter);
-    if (!filtered.length) {
-      grid.innerHTML = '<div class="empty-state">No projects in this category this edition.</div>';
-    } else {
-      grid.innerHTML = filtered.map(renderCard).join('');
-    }
+    grid.innerHTML = filtered.length
+      ? filtered.map(renderCard).join('')
+      : '<div class="empty-state">No projects in this category this edition.</div>';
   }
 
   function updateCounts(projects) {
@@ -423,13 +234,23 @@
     allProjects = edition.projects || [];
     document.getElementById('edition-date').textContent = edition.editionDate || '';
     document.getElementById('edition-next').textContent = getNextUpdate();
+    activeFilter = 'all';
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
     updateCounts(allProjects);
     renderGrid(allProjects);
   }
 
-  async function init() {
+  async function loadCity(city) {
+    activeCity = city;
+    const cfg = CITIES[city];
+    document.getElementById('meta-radius').textContent = cfg.radius;
+    document.getElementById('edition-date').textContent = 'Loading...';
+    document.getElementById('grid').innerHTML = '<div class="loading">Loading projects...</div>';
+    document.getElementById('archive-section').style.display = 'none';
+    document.getElementById('archive-list').innerHTML = '';
+
     try {
-      const res = await fetch('./data/projects.json?t=' + Date.now());
+      const res = await fetch('./' + cfg.file + '?t=' + Date.now());
       const data = await res.json();
 
       if (!data.editions || !data.editions.length) {
@@ -438,6 +259,7 @@
         return;
       }
 
+      document.getElementById('edition-label').textContent = 'Latest edition';
       loadEdition(data.editions[0]);
 
       if (data.editions.length > 1) {
@@ -445,7 +267,18 @@
         const archiveList = document.getElementById('archive-list');
         archiveSection.style.display = 'block';
 
-        data.editions.slice(1).forEach((ed) => {
+        const latestItem = document.createElement('div');
+        latestItem.className = 'archive-item active';
+        latestItem.innerHTML = `<span class="archive-item-date">Latest edition</span><span class="archive-item-count">${data.editions[0].projectCount} projects</span>`;
+        latestItem.addEventListener('click', () => {
+          document.querySelectorAll('.archive-item').forEach(x => x.classList.remove('active'));
+          latestItem.classList.add('active');
+          document.getElementById('edition-label').textContent = 'Latest edition';
+          loadEdition(data.editions[0]);
+        });
+        archiveList.appendChild(latestItem);
+
+        data.editions.slice(1).forEach(ed => {
           const item = document.createElement('div');
           item.className = 'archive-item';
           item.innerHTML = `<span class="archive-item-date">${ed.editionDate}</span><span class="archive-item-count">${ed.projectCount} projects</span>`;
@@ -465,6 +298,14 @@
     }
   }
 
+  document.querySelectorAll('.city-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.city-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      loadCity(tab.dataset.city);
+    });
+  });
+
   document.getElementById('filters').addEventListener('click', e => {
     const btn = e.target.closest('.filter-btn');
     if (!btn) return;
@@ -474,7 +315,7 @@
     renderGrid(allProjects);
   });
 
-  init();
+  loadCity('milwaukee');
 </script>
 </body>
 </html>
