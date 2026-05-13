@@ -30,8 +30,8 @@ const CITIES = {
     recipients: (process.env.MSN_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
   { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
-  { url: 'https://isthmus.com/feed/', name: 'Isthmus' },
-  { url: 'https://www.bizjournals.com/madison/feed/latest.rss', name: 'Madison Business Journal' },
+  { url: 'https://www.wkow.com/feed/', name: 'WKOW Madison' },
+  { url: 'https://www.nbc15.com/feed/', name: 'NBC15 Madison' },
 ],
   },
   fortlauderdale: {
