@@ -1,39 +1,31 @@
 name: Groundwork Update
-
 on:
   schedule:
     - cron: '0 13 * * 1'
     - cron: '0 13 * * 4'
   workflow_dispatch:
-
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
       - name: Install dependencies
         run: npm install
-
       - name: Run Groundwork update
         env:
-          env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MKE_RECIPIENTS: ${{ secrets.MKE_RECIPIENTS }}
           MSN_RECIPIENTS: ${{ secrets.MSN_RECIPIENTS }}
           FLL_RECIPIENTS: ${{ secrets.FLL_RECIPIENTS }}
         run: node scripts/fetch.js
-
       - name: Commit updated data
         run: |
           git config user.name "Groundwork Bot"
@@ -41,4 +33,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add data/
           git diff --staged --quiet || git commit -m "Edition: $(date '+%B %d, %Y')"
-          git push
+          timeout 60 git push || echo "Push failed, will retry next run"
