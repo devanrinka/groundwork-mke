@@ -1,1 +1,50 @@
-{"editions":[]}
+{
+  "editions": [
+    {
+      "date": "2026-05-26T19:59:15.138Z",
+      "editionDate": "May 26, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Raleigh Miami Beach expansion plan",
+          "type": "renovation",
+          "location": "Miami Beach, FL",
+          "status": "Public review open",
+          "developer": "Nahla Capital",
+          "architect": null,
+          "scale": "adding more than 66,000 sqft of floor area",
+          "summary": "Nahla Capital is seeking approval from the Miami Beach City Commission to expand the Raleigh Miami Beach redevelopment. The plan involves comprehensive plan and code amendments to increase the floor area ratio, which would add over 66,000 square feet to the project.",
+          "source": "The Real Deal South Florida",
+          "date": "Tue May 26, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/26/miami-beach-to-vote-on-nahla-capitals-raleigh-size-boost/"
+        },
+        {
+          "name": "Marina Village",
+          "type": "master-plan",
+          "location": "Riviera Beach, FL",
+          "status": "Developer selected",
+          "developer": "Forest Development",
+          "architect": null,
+          "scale": "$556.1 million phased development on 12 acres",
+          "summary": "Forest Development was selected by Riviera Beach city council to undertake a $556.1 million phased development at Marina Village. The project encompasses 12 acres of city-owned waterfront, forming part of a larger 80-acre site intended for significant redevelopment.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri May 22, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/22/forest-development-wins-bid-for-riviera-beach-waterfront/"
+        },
+        {
+          "name": "Portofino Hollywood",
+          "type": "ground-up",
+          "location": "Hollywood, FL",
+          "status": "Approved",
+          "developer": "Related Group",
+          "architect": null,
+          "scale": "beachfront residential development",
+          "summary": "Related Group secured approval from the Hollywood City Commission for a revised plan for its Portofino Hollywood beachfront residential development. The project was modified to include workforce housing rentals, utilizing the state's Live Local Act for expedited approval.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri May 22, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/22/related-group-adds-workforce-rentals-to-beachfront-condo/"
+        }
+      ]
+    }
+  ]
+}
