@@ -8,7 +8,7 @@ const rssParser = new Parser({ timeout: 10000 });
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const resend = new Resend(process.env.RESEND_API_KEY);
 const MIN_PROJECTS = 3;
-const RETRY_DELAY_MS = 12 * 60 * 1000;
+const RETRY_DELAY_MS = 3 * 60 * 1000;
 const MAX_ATTEMPTS = 3;
 
 const CITIES = {
