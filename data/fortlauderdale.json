@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-05-27T13:54:20.986Z",
+      "editionDate": "May 27, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "NoBe Parc Miami Beach",
+          "type": "ground-up",
+          "location": "North Beach, Miami Beach, FL",
+          "status": "Announced",
+          "developer": "Robert Finvarb Companies",
+          "architect": null,
+          "scale": "232 units",
+          "summary": "Robert Finvarb Companies is launching sales for NoBe Parc Miami Beach, a 15-story, 232-unit short-term rental-friendly condo building planned for 7140 Abbott Avenue. This project marks a significant new residential development in North Beach.",
+          "source": "The Real Deal South Florida",
+          "date": "May 27, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/27/finvarb-lunches-short-term-rental-condo-in-north-beach/"
+        },
+        {
+          "name": "Brickell Key Seawall and Baywalk Replacement",
+          "type": "renovation",
+          "location": "Brickell Key, Miami, FL",
+          "status": "Announced",
+          "developer": "Swire Properties",
+          "architect": null,
+          "scale": "$32.3 million assessment",
+          "summary": "Condo owners on Brickell Key are suing Swire Properties over a $32.3 million assessment to repair and rebuild the island’s seawall and baywalk. This major infrastructure renovation project is planned, but its funding mechanism is currently under legal dispute.",
+          "source": "The Real Deal South Florida",
+          "date": "May 26, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/26/swire-sued-over-32-million-brickell-key-condo-assessment/"
+        },
+        {
+          "name": "Raleigh Miami Beach Expansion",
+          "type": "renovation",
+          "location": "Miami Beach, FL",
+          "status": "Public review open",
+          "developer": "Nahla Capital",
+          "architect": null,
+          "scale": "Adding more than 66,000 sqft",
+          "summary": "Nahla Capital is seeking city approval for an expansion plan for the Raleigh Miami Beach redevelopment, aiming to increase the floor area ratio by adding over 66,000 square feet. The plan is scheduled for a vote by the Miami Beach Planning Board on June 2.",
+          "source": "The Real Deal South Florida",
+          "date": "May 26, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/26/miami-beach-to-vote-on-nahla-capitals-raleigh-size-boost/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-26T19:59:15.138Z",
       "editionDate": "May 26, 2026",
       "projectCount": 3,
