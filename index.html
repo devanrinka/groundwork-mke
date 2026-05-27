@@ -8,72 +8,51 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
-      --green: #1D9E75;
-      --green-light: #E1F5EE;
-      --green-dark: #085041;
-      --amber: #BA7517;
-      --amber-light: #FAEEDA;
-      --amber-dark: #633806;
-      --blue: #378ADD;
-      --blue-light: #E6F1FB;
-      --blue-dark: #0C447C;
-      --text: #1a1a1a;
-      --text-muted: #666;
-      --text-faint: #999;
-      --border: #e5e5e5;
-      --bg: #f7f6f2;
-      --card: #ffffff;
+      --green: #1D9E75; --green-light: #E1F5EE; --green-dark: #085041;
+      --amber: #BA7517; --amber-light: #FAEEDA; --amber-dark: #633806;
+      --blue: #378ADD; --blue-light: #E6F1FB; --blue-dark: #0C447C;
+      --text: #1a1a1a; --text-muted: #666; --text-faint: #999;
+      --border: #e5e5e5; --bg: #f7f6f2; --card: #ffffff;
     }
-
     body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6; }
-
     .top-bar { height: 3px; background: var(--green); }
     .container { max-width: 880px; margin: 0 auto; padding: 0 24px; }
-
     header { padding: 28px 0 0; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; }
-
     .header-inner { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
-
     .logo { font-family: 'Playfair Display', serif; font-size: 34px; font-weight: 400; letter-spacing: 0.5px; color: var(--text); line-height: 1; }
     .logo-sub { font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase; color: var(--text-faint); margin-top: 6px; font-weight: 300; }
-
     .edition-block { text-align: right; }
     .edition-label { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); font-weight: 500; }
     .edition-date { font-size: 14px; font-weight: 500; color: var(--text); margin-top: 3px; }
     .edition-next { font-size: 11px; color: var(--text-faint); margin-top: 2px; }
-
-    .city-tabs { display: flex; gap: 0; }
-    .city-tab {
-      font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 400;
-      padding: 10px 20px; border: none; background: transparent;
-      color: var(--text-faint); cursor: pointer; border-bottom: 2px solid transparent;
-      transition: all 0.15s; white-space: nowrap;
-    }
+    .city-tabs { display: flex; }
+    .city-tab { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 400; padding: 10px 20px; border: none; background: transparent; color: var(--text-faint); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.15s; white-space: nowrap; }
     .city-tab:hover { color: var(--text); }
     .city-tab.active { color: var(--green); border-bottom-color: var(--green); font-weight: 500; }
-
-    .meta-bar { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--text-muted); padding: 10px 0; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; flex-wrap: wrap; }
+    .meta-bar { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--text-muted); padding: 10px 0; border-bottom: 0.5px solid var(--border); margin-bottom: 0; flex-wrap: wrap; }
     .meta-sep { color: var(--border); }
-
-    .filters { display: flex; gap: 6px; margin-bottom: 24px; flex-wrap: wrap; }
-    .filter-btn { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; padding: 5px 14px; border: 0.5px solid var(--border); border-radius: 20px; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.15s; }
-    .filter-btn:hover { border-color: #aaa; color: var(--text); }
-    .filter-btn.active { background: var(--text); color: var(--card); border-color: var(--text); }
-    .filter-count { margin-left: 4px; opacity: 0.5; font-size: 11px; }
-
+    .content-tabs { display: flex; gap: 0; border-bottom: 0.5px solid var(--border); margin-bottom: 20px; }
+    .content-tab { font-family: 'DM Sans', sans-serif; font-size: 13px; padding: 12px 20px; border: none; background: transparent; color: var(--text-faint); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -0.5px; transition: all 0.15s; }
+    .content-tab:hover { color: var(--text); }
+    .content-tab.active { color: var(--text); border-bottom-color: var(--text); font-weight: 500; }
+    .controls { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+    .ctrl-btn { font-family: 'DM Sans', sans-serif; font-size: 12px; padding: 5px 14px; border: 0.5px solid var(--border); border-radius: 20px; background: transparent; color: var(--text-muted); cursor: pointer; transition: all 0.15s; user-select: none; }
+    .ctrl-btn:hover { border-color: #aaa; color: var(--text); }
+    .ctrl-btn.active-all { background: var(--text); color: var(--card); border-color: var(--text); }
+    .ctrl-btn.active-type { background: var(--card); color: var(--text); border-color: var(--text); font-weight: 500; }
+    .ctrl-btn.inactive-type { opacity: 0.4; }
+    .view-note { font-size: 11px; color: var(--green); margin-left: 4px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 12px; margin-bottom: 48px; }
-
     .card { background: var(--card); border: 0.5px solid var(--border); border-left-width: 3px; border-radius: 10px; padding: 16px 18px 14px 18px; transition: box-shadow 0.15s; }
     .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-
     .card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
     .type-badge { font-size: 10px; font-weight: 500; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
     .card-status { font-size: 11px; color: var(--text-faint); text-align: right; max-width: 120px; line-height: 1.4; }
     .card-name { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 400; color: var(--text); line-height: 1.3; margin-bottom: 3px; }
     .card-location { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
     .card-scale { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 9px; border-radius: 4px; margin-bottom: 10px; }
+    .card-edition { font-size: 10px; color: var(--text-faint); margin-bottom: 6px; letter-spacing: 0.5px; text-transform: uppercase; }
     .card-credits { font-size: 11px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.8; }
     .card-credits span { font-weight: 500; color: var(--text); }
     .card-summary { font-size: 13px; color: var(--text-muted); line-height: 1.65; border-top: 0.5px solid var(--border); padding-top: 10px; margin-bottom: 10px; }
@@ -81,7 +60,6 @@
     .card-source { font-size: 11px; color: var(--text-faint); }
     .card-link { font-size: 11px; color: var(--green); text-decoration: none; font-weight: 500; }
     .card-link:hover { text-decoration: underline; }
-
     .archive-section { margin-bottom: 48px; }
     .archive-title { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-faint); font-weight: 500; margin-bottom: 12px; }
     .archive-list { display: flex; flex-direction: column; gap: 1px; }
@@ -90,25 +68,44 @@
     .archive-item.active { border-color: var(--green); }
     .archive-item-date { font-size: 13px; font-weight: 500; }
     .archive-item-count { font-size: 12px; color: var(--text-faint); }
-
+    .rfp-section { margin-bottom: 48px; }
+    .rfp-group { margin-bottom: 8px; border: 0.5px solid var(--border); border-radius: 8px; overflow: hidden; }
+    .rfp-group-header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--card); cursor: pointer; user-select: none; }
+    .rfp-group-header:hover { background: #f5f4f0; }
+    .rfp-group-label { font-size: 13px; font-weight: 500; color: var(--text); }
+    .rfp-group-meta { display: flex; align-items: center; gap: 12px; }
+    .rfp-group-count { font-size: 12px; color: var(--text-faint); }
+    .rfp-toggle { font-size: 11px; color: var(--text-faint); transition: transform 0.2s; }
+    .rfp-group.open .rfp-toggle { transform: rotate(180deg); }
+    .rfp-group-body { display: none; border-top: 0.5px solid var(--border); }
+    .rfp-group.open .rfp-group-body { display: block; }
+    .rfp-card { padding: 14px 16px; border-bottom: 0.5px solid var(--border); background: var(--card); }
+    .rfp-card:last-child { border-bottom: none; }
+    .rfp-card:hover { background: #fafaf8; }
+    .rfp-card-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 6px; gap: 12px; }
+    .rfp-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 400; color: var(--text); line-height: 1.3; }
+    .rfp-deadline { font-size: 11px; font-weight: 500; color: var(--amber-dark); background: var(--amber-light); padding: 2px 8px; border-radius: 4px; white-space: nowrap; flex-shrink: 0; }
+    .rfp-agency { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; }
+    .rfp-value { display: inline-block; font-size: 11px; color: var(--green-dark); background: var(--green-light); padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; font-weight: 500; }
+    .rfp-summary { font-size: 13px; color: var(--text-muted); line-height: 1.6; margin-bottom: 8px; }
+    .rfp-footer { display: flex; justify-content: flex-end; }
+    .rfp-link { font-size: 11px; color: var(--green); text-decoration: none; font-weight: 500; }
+    .rfp-link:hover { text-decoration: underline; }
+    .rfp-empty { text-align: center; padding: 48px; color: var(--text-faint); font-size: 14px; }
     footer { border-top: 0.5px solid var(--border); padding: 20px 0 32px; font-size: 11px; color: var(--text-faint); display: flex; justify-content: space-between; align-items: center; }
-
     .empty-state { grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-faint); font-size: 14px; }
     .loading { grid-column: 1 / -1; text-align: center; padding: 48px; color: var(--text-faint); font-size: 13px; }
-
     @media (max-width: 600px) {
       .grid { grid-template-columns: 1fr; }
       .header-inner { flex-direction: column; gap: 12px; }
       .edition-block { text-align: left; }
       footer { flex-direction: column; gap: 8px; text-align: center; }
-      .city-tab { font-size: 12px; padding: 10px 14px; }
+      .city-tab { font-size: 12px; padding: 10px 12px; }
     }
   </style>
 </head>
 <body>
-
 <div class="top-bar"></div>
-
 <div class="container">
   <header>
     <div class="header-inner">
@@ -134,23 +131,31 @@
     <span class="meta-sep">·</span>
     <span id="project-count">Loading...</span>
     <span class="meta-sep">·</span>
-    <span>Auto-updated Mon &amp; Thu</span>
+    <span>Updated Mon &amp; Thu · Emailed Thu</span>
   </div>
 
-  <div class="filters" id="filters">
-    <button class="filter-btn active" data-filter="all">All <span class="filter-count" id="count-all"></span></button>
-    <button class="filter-btn" data-filter="ground-up">Ground-Up <span class="filter-count" id="count-ground-up"></span></button>
-    <button class="filter-btn" data-filter="renovation">Renovation <span class="filter-count" id="count-renovation"></span></button>
-    <button class="filter-btn" data-filter="master-plan">Master plan <span class="filter-count" id="count-master-plan"></span></button>
+  <div class="content-tabs">
+    <button class="content-tab active" data-section="news">Development news</button>
+    <button class="content-tab" data-section="rfps">RFPs <span id="rfp-count-badge" style="font-size:11px;opacity:0.6;font-weight:400;"></span></button>
   </div>
 
-  <div class="grid" id="grid">
-    <div class="loading">Loading projects...</div>
+  <div id="news-section">
+    <div class="controls" id="controls">
+      <button class="ctrl-btn active-all" id="btn-all">All</button>
+      <button class="ctrl-btn" data-type="ground-up" id="btn-ground-up">Ground-Up</button>
+      <button class="ctrl-btn" data-type="renovation" id="btn-renovation">Renovation</button>
+      <button class="ctrl-btn" data-type="master-plan" id="btn-master-plan">Master plan</button>
+      <span class="view-note" id="view-note" style="display:none">· Last 30 days</span>
+    </div>
+    <div class="grid" id="grid"><div class="loading">Loading projects...</div></div>
+    <div class="archive-section" id="archive-section" style="display:none">
+      <div class="archive-title">Past editions</div>
+      <div class="archive-list" id="archive-list"></div>
+    </div>
   </div>
 
-  <div class="archive-section" id="archive-section" style="display:none">
-    <div class="archive-title">Past editions</div>
-    <div class="archive-list" id="archive-list"></div>
+  <div id="rfp-section" style="display:none">
+    <div class="rfp-section" id="rfp-groups"></div>
   </div>
 
   <footer>
@@ -167,29 +172,48 @@
   };
 
   const CITIES = {
-    milwaukee:      { file: 'data/milwaukee.json',      radius: '50-mile radius' },
-    madison:        { file: 'data/madison.json',        radius: '40-mile radius' },
-    fortlauderdale: { file: 'data/fortlauderdale.json', radius: '30-mile radius' }
+    milwaukee:      { file: 'data/milwaukee.json',      rfpFile: 'data/milwaukee-rfps.json',      radius: '50-mile radius' },
+    madison:        { file: 'data/madison.json',        rfpFile: 'data/madison-rfps.json',        radius: '40-mile radius' },
+    fortlauderdale: { file: 'data/fortlauderdale.json', rfpFile: 'data/fortlauderdale-rfps.json', radius: '30-mile radius' }
   };
 
-  let allProjects = [];
-  let activeFilter = 'all';
+  let allEditions = [];
+  let allRFPs = [];
+  let activeTypes = new Set();
+  let activeSection = 'news';
   let activeCity = 'milwaukee';
 
   function getNextUpdate() {
     const now = new Date();
     const day = now.getDay();
     const days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-    let daysUntil;
-    if (day < 1) daysUntil = 1 - day;
-    else if (day < 4) daysUntil = 4 - day;
-    else daysUntil = 8 - day;
+    let daysUntil = day < 4 ? 4 - day : 11 - day;
     const next = new Date(now);
     next.setDate(now.getDate() + daysUntil);
-    return 'Next update ' + days[next.getDay()] + ', ' + next.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+    return 'Next email Thu, ' + next.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   }
 
-  function renderCard(p) {
+  function get30DayProjects() {
+    const cutoff = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    const projects = [];
+    allEditions.forEach(ed => {
+      if (new Date(ed.date).getTime() > cutoff) {
+        (ed.projects || []).forEach(p => projects.push({ ...p, _editionDate: ed.editionDate }));
+      }
+    });
+    return projects;
+  }
+
+  function is30DayMode() { return activeTypes.size > 0; }
+
+  function getDisplayProjects() {
+    const pool = is30DayMode() ? get30DayProjects() : (allEditions[0] ? allEditions[0].projects : []);
+    if (!pool.length) return [];
+    if (!is30DayMode()) return pool;
+    return pool.filter(p => activeTypes.has(p.type));
+  }
+
+  function renderCard(p, show30DayLabel) {
     const t = TYPE[p.type] || TYPE['ground-up'];
     const credits = (p.developer || p.architect) ? `
       <div class="card-credits">
@@ -202,6 +226,7 @@
           <span class="type-badge" style="background:${t.bg};color:${t.tc}">${t.label}</span>
           <span class="card-status">${p.status || ''}</span>
         </div>
+        ${show30DayLabel && p._editionDate ? `<div class="card-edition">${p._editionDate}</div>` : ''}
         <div class="card-name">${p.name}</div>
         <div class="card-location">${p.location}</div>
         <div class="card-scale" style="background:${t.bg};color:${t.tc}">${p.scale || ''}</div>
@@ -214,71 +239,165 @@
       </div>`;
   }
 
-  function renderGrid(projects) {
+  function renderGrid() {
     const grid = document.getElementById('grid');
-    const filtered = activeFilter === 'all' ? projects : projects.filter(p => p.type === activeFilter);
-    grid.innerHTML = filtered.length
-      ? filtered.map(renderCard).join('')
-      : '<div class="empty-state">No projects in this category this edition.</div>';
+    const projects = getDisplayProjects();
+    const in30Day = is30DayMode();
+
+    document.getElementById('view-note').style.display = in30Day ? 'inline' : 'none';
+
+    const countEl = document.getElementById('project-count');
+    if (in30Day) {
+      countEl.textContent = projects.length + ' project' + (projects.length !== 1 ? 's' : '') + ' · last 30 days';
+    } else {
+      const current = allEditions[0];
+      countEl.textContent = current ? (current.projectCount + ' project' + (current.projectCount !== 1 ? 's' : '') + ' this edition') : '0 projects';
+    }
+
+    grid.innerHTML = projects.length
+      ? projects.map(p => renderCard(p, in30Day)).join('')
+      : '<div class="empty-state">No projects found.</div>';
   }
 
-  function updateCounts(projects) {
-    document.getElementById('count-all').textContent = projects.length;
-    ['ground-up','renovation','master-plan'].forEach(t => {
-      document.getElementById('count-' + t).textContent = projects.filter(p => p.type === t).length;
+  function updateFilterButtons() {
+    const allBtn = document.getElementById('btn-all');
+    allBtn.className = 'ctrl-btn ' + (activeTypes.size === 0 ? 'active-all' : '');
+
+    ['ground-up', 'renovation', 'master-plan'].forEach(type => {
+      const btn = document.getElementById('btn-' + type);
+      if (activeTypes.size === 0) {
+        btn.className = 'ctrl-btn';
+      } else if (activeTypes.has(type)) {
+        btn.className = 'ctrl-btn active-type';
+      } else {
+        btn.className = 'ctrl-btn inactive-type';
+      }
     });
-    document.getElementById('project-count').textContent = projects.length + ' project' + (projects.length !== 1 ? 's' : '') + ' this edition';
   }
 
-  function loadEdition(edition) {
-    allProjects = edition.projects || [];
-    document.getElementById('edition-date').textContent = edition.editionDate || '';
-    document.getElementById('edition-next').textContent = getNextUpdate();
-    activeFilter = 'all';
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));
-    updateCounts(allProjects);
-    renderGrid(allProjects);
+  function renderRFPs() {
+    const container = document.getElementById('rfp-groups');
+    const thirtyDaysAgo = Date.now() - 30 * 24 * 60 * 60 * 1000;
+    const active = allRFPs.filter(r => new Date(r.dateFound).getTime() > thirtyDaysAgo);
+
+    document.getElementById('rfp-count-badge').textContent = active.length ? `(${active.length})` : '';
+
+    if (!active.length) {
+      container.innerHTML = '<div class="rfp-empty">No active RFPs in the last 30 days.</div>';
+      return;
+    }
+
+    const groups = {};
+    active.forEach(rfp => {
+      if (!groups[rfp.weekLabel]) groups[rfp.weekLabel] = [];
+      groups[rfp.weekLabel].push(rfp);
+    });
+
+    const sortedWeeks = Object.keys(groups).sort((a, b) => new Date(b) - new Date(a));
+
+    container.innerHTML = sortedWeeks.map((week, i) => {
+      const rfps = groups[week];
+      const isOpen = i === 0;
+      const cards = rfps.map(rfp => `
+        <div class="rfp-card">
+          <div class="rfp-card-top">
+            <div class="rfp-title">${rfp.title}</div>
+            ${rfp.deadline ? `<span class="rfp-deadline">Due ${rfp.deadline}</span>` : ''}
+          </div>
+          <div class="rfp-agency">${rfp.agency}${rfp.location ? ' · ' + rfp.location : ''}</div>
+          ${rfp.estimatedValue ? `<div class="rfp-value">${rfp.estimatedValue}</div>` : ''}
+          <div class="rfp-summary">${rfp.summary}</div>
+          <div class="rfp-footer">
+            ${rfp.link ? `<a class="rfp-link" href="${rfp.link}" target="_blank" rel="noopener">View RFP →</a>` : ''}
+          </div>
+        </div>`).join('');
+
+      return `
+        <div class="rfp-group ${isOpen ? 'open' : ''}" data-week="${week}">
+          <div class="rfp-group-header">
+            <span class="rfp-group-label">${week}</span>
+            <div class="rfp-group-meta">
+              <span class="rfp-group-count">${rfps.length} RFP${rfps.length !== 1 ? 's' : ''}</span>
+              <span class="rfp-toggle">▾</span>
+            </div>
+          </div>
+          <div class="rfp-group-body">${cards}</div>
+        </div>`;
+    }).join('');
+
+    container.querySelectorAll('.rfp-group-header').forEach(header => {
+      header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('open');
+      });
+    });
+  }
+
+  function showSection(section) {
+    activeSection = section;
+    document.getElementById('news-section').style.display = section === 'news' ? 'block' : 'none';
+    document.getElementById('rfp-section').style.display = section === 'rfps' ? 'block' : 'none';
+    document.querySelectorAll('.content-tab').forEach(t => t.classList.toggle('active', t.dataset.section === section));
+    if (section === 'rfps') renderRFPs();
   }
 
   async function loadCity(city) {
     activeCity = city;
-    const cfg = CITIES[city];
-    document.getElementById('meta-radius').textContent = cfg.radius;
+    activeTypes = new Set();
+    activeSection = 'news';
+    allEditions = [];
+    allRFPs = [];
+
+    document.getElementById('meta-radius').textContent = CITIES[city].radius;
     document.getElementById('edition-date').textContent = 'Loading...';
+    document.getElementById('edition-label').textContent = 'Latest edition';
     document.getElementById('grid').innerHTML = '<div class="loading">Loading projects...</div>';
     document.getElementById('archive-section').style.display = 'none';
     document.getElementById('archive-list').innerHTML = '';
+    document.getElementById('news-section').style.display = 'block';
+    document.getElementById('rfp-section').style.display = 'none';
+    document.getElementById('rfp-count-badge').textContent = '';
+    document.querySelectorAll('.content-tab').forEach(t => t.classList.toggle('active', t.dataset.section === 'news'));
+    updateFilterButtons();
 
     try {
-      const res = await fetch('./' + cfg.file + '?t=' + Date.now());
+      const res = await fetch('./' + CITIES[city].file + '?t=' + Date.now());
       const data = await res.json();
+      allEditions = data.editions || [];
+    } catch (e) { allEditions = []; }
 
-      if (!data.editions || !data.editions.length) {
-        document.getElementById('grid').innerHTML = '<div class="empty-state">No editions yet — check back Monday or Thursday.</div>';
-        document.getElementById('edition-date').textContent = 'No editions yet';
-        return;
-      }
+    try {
+      const res = await fetch('./' + CITIES[city].rfpFile + '?t=' + Date.now());
+      const data = await res.json();
+      allRFPs = data.rfps || [];
+    } catch (e) { allRFPs = []; }
 
-      document.getElementById('edition-label').textContent = 'Latest edition';
-      loadEdition(data.editions[0]);
+    if (!allEditions.length) {
+      document.getElementById('grid').innerHTML = '<div class="empty-state">No editions yet — check back Monday or Thursday.</div>';
+      document.getElementById('edition-date').textContent = 'No editions yet';
+    } else {
+      document.getElementById('edition-date').textContent = allEditions[0].editionDate;
+      document.getElementById('edition-next').textContent = getNextUpdate();
+      renderGrid();
 
-      if (data.editions.length > 1) {
+      if (allEditions.length > 1) {
         const archiveSection = document.getElementById('archive-section');
         const archiveList = document.getElementById('archive-list');
         archiveSection.style.display = 'block';
 
         const latestItem = document.createElement('div');
         latestItem.className = 'archive-item active';
-        latestItem.innerHTML = `<span class="archive-item-date">Latest edition</span><span class="archive-item-count">${data.editions[0].projectCount} projects</span>`;
+        latestItem.innerHTML = `<span class="archive-item-date">Latest edition</span><span class="archive-item-count">${allEditions[0].projectCount} projects</span>`;
         latestItem.addEventListener('click', () => {
           document.querySelectorAll('.archive-item').forEach(x => x.classList.remove('active'));
           latestItem.classList.add('active');
           document.getElementById('edition-label').textContent = 'Latest edition';
-          loadEdition(data.editions[0]);
+          activeTypes = new Set();
+          updateFilterButtons();
+          renderGrid();
         });
         archiveList.appendChild(latestItem);
 
-        data.editions.slice(1).forEach(ed => {
+        allEditions.slice(1).forEach(ed => {
           const item = document.createElement('div');
           item.className = 'archive-item';
           item.innerHTML = `<span class="archive-item-date">${ed.editionDate}</span><span class="archive-item-count">${ed.projectCount} projects</span>`;
@@ -286,17 +405,47 @@
             document.querySelectorAll('.archive-item').forEach(x => x.classList.remove('active'));
             item.classList.add('active');
             document.getElementById('edition-label').textContent = 'Past edition';
-            loadEdition(ed);
+            activeTypes = new Set();
+            updateFilterButtons();
+            const singleEditionProjects = ed.projects || [];
+            const grid = document.getElementById('grid');
+            document.getElementById('view-note').style.display = 'none';
+            document.getElementById('project-count').textContent = ed.projectCount + ' project' + (ed.projectCount !== 1 ? 's' : '') + ' this edition';
+            grid.innerHTML = singleEditionProjects.map(p => renderCard(p, false)).join('');
           });
           archiveList.appendChild(item);
         });
       }
-
-    } catch (e) {
-      document.getElementById('grid').innerHTML = '<div class="empty-state">Could not load projects. Check back soon.</div>';
-      document.getElementById('edition-date').textContent = '—';
     }
+
+    const rfpActive = allRFPs.filter(r => Date.now() - new Date(r.dateFound).getTime() < 30 * 24 * 60 * 60 * 1000);
+    document.getElementById('rfp-count-badge').textContent = rfpActive.length ? `(${rfpActive.length})` : '';
   }
+
+  document.getElementById('btn-all').addEventListener('click', () => {
+    activeTypes = new Set();
+    updateFilterButtons();
+    document.getElementById('edition-label').textContent = 'Latest edition';
+    document.querySelectorAll('.archive-item').forEach((x, i) => x.classList.toggle('active', i === 0));
+    renderGrid();
+  });
+
+  ['ground-up', 'renovation', 'master-plan'].forEach(type => {
+    document.getElementById('btn-' + type).addEventListener('click', () => {
+      if (activeTypes.has(type)) {
+        activeTypes.delete(type);
+      } else {
+        activeTypes.add(type);
+      }
+      if (activeTypes.size > 0) {
+        document.getElementById('edition-label').textContent = 'Last 30 days';
+      } else {
+        document.getElementById('edition-label').textContent = 'Latest edition';
+      }
+      updateFilterButtons();
+      renderGrid();
+    });
+  });
 
   document.querySelectorAll('.city-tab').forEach(tab => {
     tab.addEventListener('click', () => {
@@ -306,13 +455,8 @@
     });
   });
 
-  document.getElementById('filters').addEventListener('click', e => {
-    const btn = e.target.closest('.filter-btn');
-    if (!btn) return;
-    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeFilter = btn.dataset.filter;
-    renderGrid(allProjects);
+  document.querySelectorAll('.content-tab').forEach(tab => {
+    tab.addEventListener('click', () => showSection(tab.dataset.section));
   });
 
   loadCity('milwaukee');
