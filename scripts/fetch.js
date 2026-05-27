@@ -16,33 +16,48 @@ const CITIES = {
     name: 'Milwaukee, WI',
     radius: '50 miles',
     dataFile: 'data/milwaukee.json',
+    rfpFile: 'data/milwaukee-rfps.json',
     recipients: (process.env.MKE_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
       { url: 'https://urbanmilwaukee.com/feed/', name: 'Urban Milwaukee' },
       { url: 'https://biztimes.com/feed/', name: 'BizTimes Milwaukee' },
       { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
     ],
+    rfpSources: [
+      { url: 'https://city.milwaukee.gov/Purchasing', name: 'City of Milwaukee' },
+      { url: 'https://county.milwaukee.gov/EN/Purchasing', name: 'Milwaukee County' },
+    ],
   },
   madison: {
     name: 'Madison, WI',
     radius: '40 miles',
     dataFile: 'data/madison.json',
+    rfpFile: 'data/madison-rfps.json',
     recipients: (process.env.MSN_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
-  { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
-  { url: 'https://www.wkow.com/feed/', name: 'WKOW Madison' },
-  { url: 'https://www.nbc15.com/feed/', name: 'NBC15 Madison' },
-],
+      { url: 'https://wisbusiness.com/feed/', name: 'WisBusiness' },
+      { url: 'https://captimes.com/feed/', name: 'The Capital Times' },
+      { url: 'https://www.channel3000.com/feed/', name: 'Channel 3000' },
+    ],
+    rfpSources: [
+      { url: 'https://www.cityofmadison.com/finance/purchasing/bids', name: 'City of Madison' },
+      { url: 'https://danedocs.countyofdane.com/webdocs/Purchasing/', name: 'Dane County' },
+    ],
   },
   fortlauderdale: {
     name: 'Fort Lauderdale, FL',
     radius: '30 miles',
     dataFile: 'data/fortlauderdale.json',
+    rfpFile: 'data/fortlauderdale-rfps.json',
     recipients: (process.env.FLL_RECIPIENTS || '').split(',').map(e => e.trim()).filter(Boolean),
     feeds: [
       { url: 'https://therealdeal.com/miami/feed/', name: 'The Real Deal South Florida' },
       { url: 'https://www.commercialobserver.com/feed/', name: 'Commercial Observer' },
       { url: 'https://www.thenextmiami.com/feed/', name: 'The Next Miami' },
+    ],
+    rfpSources: [
+      { url: 'https://www.fortlauderdale.gov/departments/finance/purchasing/current-bids-and-proposals', name: 'City of Fort Lauderdale' },
+      { url: 'https://www.broward.org/Purchasing/Pages/CurrentBids.aspx', name: 'Broward County' },
     ],
   },
 };
@@ -70,9 +85,31 @@ async function fetchArticles(feeds) {
   return articles;
 }
 
-async function callGemini(articles, cityName, radius) {
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+async function fetchRFPPage(url, sourceName) {
+  try {
+    const response = await fetch(url, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Groundwork/1.0)' },
+      signal: AbortSignal.timeout(15000),
+    });
+    if (!response.ok) throw new Error(`Status ${response.status}`);
+    const html = await response.text();
+    const text = html
+      .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+      .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+      .slice(0, 6000);
+    console.log(`  ${sourceName}: fetched`);
+    return { source: sourceName, content: text, url };
+  } catch (err) {
+    console.warn(`  Could not fetch RFP page ${sourceName}: ${err.message}`);
+    return null;
+  }
+}
 
+async function callGeminiForProjects(articles, cityName, radius) {
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
   const articleText = articles.slice(0, 30).map((a, i) =>
     `[${i}] SOURCE: ${a.source}\nTITLE: ${a.title}\nSNIPPET: ${a.snippet}\nDATE: ${a.date}\nURL: ${a.link}`
   ).join('\n\n---\n\n');
@@ -127,11 +164,65 @@ ${articleText}`;
   return JSON.parse(text).projects || [];
 }
 
+async function callGeminiForRFPs(pages, cityName) {
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
+  const pageText = pages.map(p =>
+    `SOURCE: ${p.source}\nURL: ${p.url}\nCONTENT:\n${p.content}`
+  ).join('\n\n---\n\n');
+
+  const prompt = `You are a business development assistant for RINKA, an architecture and urban design firm specializing in mixed-use, hospitality, multifamily residential, marina/waterfront, commercial, and master planning projects.
+
+Review these procurement pages from ${cityName} and extract any active RFPs, RFQs, or bids relevant to architectural design, interior design, urban planning, or master planning services.
+
+INCLUDE:
+- Architectural design services
+- Urban planning and master planning
+- Interior design services
+- Mixed-use, hospitality, residential, commercial, civic, or waterfront projects
+- Design-build opportunities with an architecture component
+- Planning studies or feasibility studies with a design component
+
+EXCLUDE:
+- Construction-only contracts with no design component
+- IT or technology services
+- Maintenance, janitorial, or operational services
+- Legal or financial services
+- Projects estimated under $100,000 if value is mentioned
+
+Return ONLY a raw JSON object, no markdown, no backticks:
+
+{
+  "rfps": [
+    {
+      "title": "Full RFP or RFQ title",
+      "agency": "Issuing agency or municipality",
+      "location": "City, State",
+      "deadline": "Mon DD, YYYY or null if not found",
+      "estimatedValue": "Dollar amount or range, or null if not mentioned",
+      "summary": "2-3 sentences describing the project scope and what is being sought.",
+      "link": "Direct URL to RFP if found, otherwise the source page URL"
+    }
+  ]
+}
+
+If no relevant RFPs found, return: {"rfps":[]}
+
+PROCUREMENT PAGES:
+${pageText}`;
+
+  const timeout = new Promise((_, reject) =>
+    setTimeout(() => reject(new Error('Gemini timed out after 90s')), 90000)
+  );
+  const result = await Promise.race([model.generateContent(prompt), timeout]);
+  const text = result.response.text().trim().replace(/```json|```/g, '').trim();
+  return JSON.parse(text).rfps || [];
+}
+
 async function extractProjects(articles, cityName, radius) {
   for (let attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
     try {
       console.log(`  Gemini attempt ${attempt} of ${MAX_ATTEMPTS}...`);
-      return await callGemini(articles, cityName, radius);
+      return await callGeminiForProjects(articles, cityName, radius);
     } catch (err) {
       console.error(`  Attempt ${attempt} failed: ${err.message}`);
       if (attempt < MAX_ATTEMPTS) {
@@ -142,6 +233,25 @@ async function extractProjects(articles, cityName, radius) {
   }
   console.error('All Gemini attempts exhausted.');
   return [];
+}
+
+async function extractRFPs(rfpSources, cityName) {
+  const pages = [];
+  for (const source of rfpSources) {
+    const page = await fetchRFPPage(source.url, source.name);
+    if (page) pages.push(page);
+  }
+  if (!pages.length) {
+    console.log('  No RFP pages fetched successfully.');
+    return [];
+  }
+  try {
+    console.log(`  Sending ${pages.length} RFP pages to Gemini...`);
+    return await callGeminiForRFPs(pages, cityName);
+  } catch (err) {
+    console.error(`  RFP extraction failed: ${err.message}`);
+    return [];
+  }
 }
 
 function buildEmailHTML(projects, editionDate, cityName) {
@@ -187,85 +297,109 @@ function buildEmailHTML(projects, editionDate, cityName) {
         <div style="font-size:10px;color:#aaa;letter-spacing:2.5px;text-transform:uppercase;margin-top:5px;font-weight:300;">${cityName} development intelligence</div>
       </div>
       <div style="text-align:right;">
-        <div style="font-size:10px;color:#1D9E75;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;">New edition</div>
+        <div style="font-size:10px;color:#1D9E75;text-transform:uppercase;letter-spacing:1.5px;font-weight:600;">Thursday edition</div>
         <div style="font-size:14px;font-weight:500;color:#1a1a1a;margin-top:3px;">${editionDate}</div>
       </div>
     </div>
     <div style="border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:9px 0;margin-bottom:20px;font-size:12px;color:#888;">
-      ${projects.length} new projects &nbsp;&middot;&nbsp; ${cityName} &nbsp;&middot;&nbsp; Auto-updated
+      ${projects.length} new projects &nbsp;&middot;&nbsp; ${cityName} &nbsp;&middot;&nbsp; Weekly digest
     </div>
     ${cards}
     <div style="text-align:center;padding:20px 0 8px;">
       <a href="https://devanrinka.github.io/groundwork-mke" style="display:inline-block;background:#1a1a1a;color:#ffffff;text-decoration:none;padding:11px 28px;border-radius:6px;font-size:13px;font-weight:500;">View full edition &rarr;</a>
     </div>
     <div style="text-align:center;font-size:11px;color:#bbb;margin-top:16px;padding-bottom:8px;">
-      Groundwork &middot; ${cityName} &middot; Auto-generated development intelligence
+      Groundwork &middot; ${cityName} &middot; Sent every Thursday
     </div>
   </div>
 </body>
 </html>`;
 }
 
-async function processCity(cityKey, city) {
+async function processCity(cityKey, city, sendEmail) {
   console.log(`\n--- Processing ${city.name} ---`);
 
   const articles = await fetchArticles(city.feeds);
   console.log(`Total articles: ${articles.length}`);
 
-  if (!articles.length) {
-    console.log('No articles. Skipping.');
-    return;
+  if (articles.length) {
+    const projects = await extractProjects(articles, city.name, city.radius);
+    console.log(`Qualifying projects: ${projects.length}`);
+
+    if (projects.length >= MIN_PROJECTS) {
+      const dataPath = path.join(__dirname, '..', city.dataFile);
+      let data = { editions: [] };
+      if (fs.existsSync(dataPath)) {
+        try { data = JSON.parse(fs.readFileSync(dataPath, 'utf8')); } catch {}
+      }
+
+      const now = new Date();
+      const editionDate = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+      data.editions = [
+        { date: now.toISOString(), editionDate, projectCount: projects.length, projects },
+        ...data.editions,
+      ].slice(0, 12);
+
+      fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
+      console.log(`${city.dataFile} updated`);
+
+      if (sendEmail && city.recipients.length) {
+        const html = buildEmailHTML(projects, editionDate, city.name);
+        const { error } = await resend.emails.send({
+          from: 'Groundwork <onboarding@resend.dev>',
+          to: city.recipients,
+          subject: `Groundwork · ${city.name} · ${editionDate} · ${projects.length} new projects`,
+          html,
+        });
+        if (error) {
+          console.error('Email error:', error);
+        } else {
+          console.log(`Email sent to ${city.recipients.join(', ')}`);
+        }
+      } else if (!sendEmail) {
+        console.log('Monday run — website updated, email skipped.');
+      } else {
+        console.log('No recipients configured. Skipping email.');
+      }
+    } else {
+      console.log(`Below threshold of ${MIN_PROJECTS}. No edition sent.`);
+    }
   }
 
-  const projects = await extractProjects(articles, city.name, city.radius);
-  console.log(`Qualifying projects: ${projects.length}`);
+  console.log(`  Fetching RFPs for ${city.name}...`);
+  const newRFPs = await extractRFPs(city.rfpSources, city.name);
+  console.log(`  New RFPs found: ${newRFPs.length}`);
 
-  if (projects.length < MIN_PROJECTS) {
-    console.log(`Below threshold of ${MIN_PROJECTS}. No edition sent.`);
-    return;
-  }
-
-  const dataPath = path.join(__dirname, '..', city.dataFile);
-  let data = { editions: [] };
-  if (fs.existsSync(dataPath)) {
-    try { data = JSON.parse(fs.readFileSync(dataPath, 'utf8')); } catch {}
+  const rfpPath = path.join(__dirname, '..', city.rfpFile);
+  let rfpData = { rfps: [] };
+  if (fs.existsSync(rfpPath)) {
+    try { rfpData = JSON.parse(fs.readFileSync(rfpPath, 'utf8')); } catch {}
   }
 
   const now = new Date();
+  const thirtyDaysAgo = new Date(now - 30 * 24 * 60 * 60 * 1000);
+  rfpData.rfps = rfpData.rfps.filter(r => new Date(r.dateFound) > thirtyDaysAgo);
+
   const editionDate = now.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-
-  data.editions = [
-    { date: now.toISOString(), editionDate, projectCount: projects.length, projects },
-    ...data.editions,
-  ].slice(0, 12);
-
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-  console.log(`${city.dataFile} updated`);
-
-  if (!city.recipients.length) {
-    console.log('No recipients configured. Skipping email.');
-    return;
-  }
-
-  const html = buildEmailHTML(projects, editionDate, city.name);
-  const { error } = await resend.emails.send({
-    from: 'Groundwork <groundwork@rinka.com>',
-    to: city.recipients,
-    subject: `Groundwork · ${city.name} · ${editionDate} · ${projects.length} new projects`,
-    html,
+  const existingLinks = new Set(rfpData.rfps.map(r => r.link));
+  newRFPs.forEach(rfp => {
+    if (!existingLinks.has(rfp.link)) {
+      rfpData.rfps.unshift({ ...rfp, dateFound: now.toISOString(), weekLabel: editionDate });
+    }
   });
 
-  if (error) {
-    console.error('Email error:', error);
-  } else {
-    console.log(`Email sent to ${city.recipients.join(', ')}`);
-  }
+  fs.writeFileSync(rfpPath, JSON.stringify(rfpData, null, 2));
+  console.log(`  ${city.rfpFile} updated`);
 }
 
 async function run() {
   console.log('=== Groundwork update starting ===');
+  const isThursday = new Date().getDay() === 4;
+  console.log(`Day check: ${isThursday ? 'Thursday — will send emails' : 'Not Thursday — website update only'}`);
+
   for (const [key, city] of Object.entries(CITIES)) {
-    await processCity(key, city);
+    await processCity(key, city, isThursday);
   }
   console.log('\n=== Done ===');
 }
