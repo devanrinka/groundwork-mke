@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-05-28T21:17:55.842Z",
+      "editionDate": "May 28, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Miami International Airport Modernization in Action Plan",
+          "type": "master-plan",
+          "location": "Miami International Airport, Miami, FL",
+          "status": "Announced",
+          "developer": "Miami International Airport",
+          "architect": null,
+          "scale": "68,000 sqft industrial property · $14 billion expansion",
+          "summary": "Miami International Airport acquired a 68,000-square-foot industrial warehouse for $19.2 million. This property will serve as storage and a construction staging site, supporting the airport's extensive $14 billion 'Modernization in Action Plan' expansion initiatives over the next decade.",
+          "source": "The Real Deal South Florida",
+          "date": "May 28, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/28/miami-international-airport-buys-warehouse-for-19-million/"
+        },
+        {
+          "name": "Lotis Wellington",
+          "type": "master-plan",
+          "location": "Wellington, Palm Beach County, FL",
+          "status": "Partly finished",
+          "developer": "Development partner (name not specified due to infighting)",
+          "architect": null,
+          "scale": "Mixed-use community with residences, retail, restaurants, and offices",
+          "summary": "The Lotis Wellington mixed-use project, which received zoning approval six years ago, was planned as an ambitious community featuring residences, retail, restaurants, and offices. Although partly finished, the development is now entangled in developer infighting and faces over $5 million in liens from unpaid bills.",
+          "source": "The Real Deal South Florida",
+          "date": "May 28, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/28/lotis-wellington-liens-hit-5million-as-developers-feud/"
+        },
+        {
+          "name": "Polo West Golf Course Redevelopment",
+          "type": "master-plan",
+          "location": "Wellington, Palm Beach County, FL",
+          "status": "Land purchase closed",
+          "developer": "BH Group",
+          "architect": null,
+          "scale": "150.5-acre redevelopment site",
+          "summary": "BH Group finalized the nearly $21 million acquisition of the 150.5-acre Polo West Golf Course in Wellington, Palm Beach County. The purchase, which followed a settlement of litigation with seller Glenn Straub, signals the imminent redevelopment of this significant shuttered golf course site.",
+          "source": "The Real Deal South Florida",
+          "date": "May 27, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/27/bh-buys-polo-west-in-wellington-from-glenn-straub-settles-suit/"
+        },
+        {
+          "name": "Coral Gables City Hall Renovation",
+          "type": "renovation",
+          "location": "Coral Gables, FL",
+          "status": "Set to begin",
+          "developer": "City of Coral Gables",
+          "architect": null,
+          "scale": "Multimillion-dollar renovation",
+          "summary": "A multi-million dollar renovation of the historic Coral Gables City Hall is slated to commence. This significant public project aims to upgrade the iconic municipal building, representing a key investment in the city's infrastructure and heritage.",
+          "source": "The Real Deal South Florida",
+          "date": "May 27, 2026",
+          "link": "https://therealdeal.com/miami/2026/05/27/city-of-coral-gables-florida-to-invest-in-medical-office/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-27T13:54:20.986Z",
       "editionDate": "May 27, 2026",
       "projectCount": 3,
