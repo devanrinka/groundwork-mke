@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-06-01T22:35:03.839Z",
+      "editionDate": "June 1, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Unnamed Housing and Entertainment Proposal",
+          "type": "master-plan",
+          "location": "Milwaukee, WI",
+          "status": "Pending final approval",
+          "developer": null,
+          "architect": null,
+          "scale": null,
+          "summary": "A proposal for a new housing and entertainment development, replacing a vacant building and a park, has been selected and now awaits final approval from the Milwaukee Common Council.",
+          "source": "Urban Milwaukee",
+          "date": "Jun 01, 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/01/see-selected-plan-to-replace-vacant-building-park/"
+        },
+        {
+          "name": "McGovern Park Senior Center",
+          "type": "ground-up",
+          "location": "McGovern Park, Milwaukee County, WI",
+          "status": "Planning funded",
+          "developer": "Milwaukee County",
+          "architect": null,
+          "scale": null,
+          "summary": "Milwaukee County has approved funding for the design plan of a new senior center at McGovern Park. The project's future construction funding remains a question.",
+          "source": "Urban Milwaukee",
+          "date": "May 31, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/31/mke-county-county-will-plan-new-mcgovern-senior-center/"
+        },
+        {
+          "name": "Whitefish Bay Affordable Housing Development",
+          "type": "ground-up",
+          "location": "Whitefish Bay, WI",
+          "status": "Grand opening",
+          "developer": null,
+          "architect": null,
+          "scale": "17 units",
+          "summary": "A new 17-unit affordable housing development in Whitefish Bay has opened, receiving over 350 applications from prospective tenants, indicating high demand.",
+          "source": "Urban Milwaukee",
+          "date": "May 31, 2026",
+          "link": "https://urbanmilwaukee.com/2026/05/31/mke-county-whitefish-bay-affordable-housing-development-opens-to-huge-demand/"
+        },
+        {
+          "name": "Coventry Commons",
+          "type": "master-plan",
+          "location": "Glendale, WI",
+          "status": "Proposed",
+          "developer": "Cobalt Partners",
+          "architect": null,
+          "scale": "Mixed-use with retail, commercial, multi-family residential, indoor self-storage. Repurposing 60,000 sqft vacant building.",
+          "summary": "Cobalt Partners is proposing Coventry Commons, a new mixed-use development district at 6800 N. Port Washington Road in Glendale. The project includes retail, commercial, multi-family residential, indoor self-storage, and will repurpose a 60,000-square-foot vacant building.",
+          "source": "BizTimes Milwaukee",
+          "date": "Jun 01, 2026",
+          "link": "https://biztimes.com/cobalt-partners-plans-mixed-use-development-district-in-glendale/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-11T19:18:21.223Z",
       "editionDate": "May 11, 2026",
       "projectCount": 8,
