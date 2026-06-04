@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-06-04T20:36:12.753Z",
+      "editionDate": "June 4, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Bay View Piggly Wiggly Renovation",
+          "type": "renovation",
+          "location": "Bay View, Milwaukee, WI",
+          "status": "Grand opening",
+          "developer": null,
+          "architect": null,
+          "scale": "Multimillion-dollar project",
+          "summary": "The Piggly Wiggly grocery store in Bay View has completed a multimillion-dollar renovation, featuring aesthetic updates, a revised store layout, and an expanded inventory. This project enhances the shopping experience and revitalizes the local community grocery store.",
+          "source": "Urban Milwaukee",
+          "date": "Thu, 04 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/04/bay-view-piggly-wiggly-unveils-renovation/"
+        },
+        {
+          "name": "Dulce Diabla New Location",
+          "type": "ground-up",
+          "location": "Muskego Way neighborhood, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "Dulce Diabla",
+          "architect": null,
+          "scale": "Bar, dance club, and sit-down dining",
+          "summary": "Dulce Diabla announced plans to establish a new location in Milwaukee's Muskego Way neighborhood, which will feature a bar, dance club, and sit-down dining. This project aims to create a new entertainment and culinary venue on the city's south side.",
+          "source": "Urban Milwaukee",
+          "date": "Thu, 04 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/04/southside-bar-eyes-new-location/"
+        },
+        {
+          "name": "Multiple Affordable Housing Projects",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Funding approved",
+          "developer": null,
+          "architect": null,
+          "scale": "709 units across 8 projects",
+          "summary": "State tax credits have been approved for eight distinct projects across Milwaukee, totaling 709 new affordable apartments. These developments are slated for various neighborhoods, from Downtown to the central city, aiming to expand affordable housing options.",
+          "source": "Urban Milwaukee",
+          "date": "Wed, 03 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/03/funding-approved-for-709-new-affordable-apartments-in-milwaukee/"
+        },
+        {
+          "name": "Kenosha Innovation Neighborhood (KIN)",
+          "type": "master-plan",
+          "location": "Kenosha, WI",
+          "status": "Announced",
+          "developer": "Kenosha Innovation Neighborhood (KIN)",
+          "architect": null,
+          "scale": "Neighborhood-scale development",
+          "summary": "The Kenosha Innovation Neighborhood (KIN), a significant master-plan development, announced a strategic partnership with the Wisconsin Women’s Business Initiative Corporation (WWBIC). This collaboration strengthens KIN's mission to serve as a regional hub for entrepreneurs and small businesses, marking a further step in its development.",
+          "source": "WisBusiness",
+          "date": "Thu, 04 Jun 2026",
+          "link": "https://www.wisbusiness.com/2026/kenosha-innovation-neighborhood-announces-wwbic-as-impact-partner/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-01T22:35:03.839Z",
       "editionDate": "June 1, 2026",
       "projectCount": 4,
