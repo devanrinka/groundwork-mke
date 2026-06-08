@@ -1,6 +1,91 @@
 {
   "editions": [
     {
+      "date": "2026-06-08T21:19:06.242Z",
+      "editionDate": "June 8, 2026",
+      "projectCount": 6,
+      "projects": [
+        {
+          "name": "Cora Merrick Park",
+          "type": "ground-up",
+          "location": "Coral Gables, FL",
+          "status": "Groundbreaking",
+          "developer": "Constellation Group and the Boschetti Group",
+          "architect": null,
+          "scale": "74-unit luxury condo development",
+          "summary": "Constellation Group and Boschetti Group secured a $67.5 million construction loan for Cora Merrick Park, a 74-unit luxury condo development in Coral Gables. This wellness-focused project broke ground two months prior and is located across from Shops at Merrick Park.",
+          "source": "The Real Deal South Florida",
+          "date": "Mon 08, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/08/cora-merrick-park-secures-67-5-million-construction-loan/"
+        },
+        {
+          "name": "Virginia Key Marinas Redevelopment",
+          "type": "master-plan",
+          "location": "Virginia Key, Miami, FL",
+          "status": "Public review open",
+          "developer": "Virginia Key LLC",
+          "architect": null,
+          "scale": "$80 million proposal",
+          "summary": "Miami City Commissioners are set to reconsider an $80 million proposal to redevelop the Virginia Key marinas, a plan that has been delayed by lawsuits for nearly a decade. The commission will decide if residents should vote on the proposal by Virginia Key LLC to revitalize the waterfront area.",
+          "source": "The Real Deal South Florida",
+          "date": "Mon 08, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/08/miami-to-revisit-redevelopment-of-virginia-key-marinas/"
+        },
+        {
+          "name": "Prospera Real Estate Collective Coconut Grove Condos",
+          "type": "ground-up",
+          "location": "Coconut Grove, Miami, FL",
+          "status": "Announced",
+          "developer": "Prospera Real Estate Collective (Ellen Buckley)",
+          "architect": null,
+          "scale": "56-unit condo building",
+          "summary": "Developer Ellen Buckley's Prospera Real Estate Collective plans a five-story, 56-unit condo building in Miami's Coconut Grove. This project is part of a broader initiative to develop affordable and workforce housing in Miami-Dade County to address the regional housing crunch.",
+          "source": "The Real Deal South Florida",
+          "date": "Mon 08, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/08/ellen-buckley-plans-affordable-workforce-miami-dade-homes/"
+        },
+        {
+          "name": "Prospera Real Estate Collective Miami-Dade Townhomes",
+          "type": "ground-up",
+          "location": "Miami-Dade County, FL",
+          "status": "Announced",
+          "developer": "Prospera Real Estate Collective (Ellen Buckley)",
+          "architect": null,
+          "scale": "37 for-sale townhomes in 14 buildings",
+          "summary": "Prospera Real Estate Collective, led by Ellen Buckley, plans to develop 37 for-sale townhomes across 14 buildings in Miami-Dade County. This initiative aims to address the region's affordable housing crunch by offering homes at below-market sale prices.",
+          "source": "The Real Deal South Florida",
+          "date": "Mon 08, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/08/ellen-buckley-plans-affordable-workforce-miami-dade-homes/"
+        },
+        {
+          "name": "Pablo Castro's Live Local Act Megaproject",
+          "type": "ground-up",
+          "location": "Miami Gardens, Miami-Dade County, FL",
+          "status": "Announced",
+          "developer": "Pablo Castro, Digital Housing Platform entity",
+          "architect": null,
+          "scale": "Miami-Dade County’s largest Live Local Act project (megaproject)",
+          "summary": "Spanish developer Pablo Castro's proposed megaproject, intended to be Miami-Dade County’s largest Live Local Act development, is currently facing its third lawsuit. The Miami Gardens Chamber of Commerce is among those suing Castro and his Digital Housing Platform entity over alleged trade secret misappropriation for the planned complex.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri 05, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/05/live-local-act-megaproject-developer-pablo-castro-sued/"
+        },
+        {
+          "name": "Alhambra Parc",
+          "type": "ground-up",
+          "location": "Coral Gables, FL",
+          "status": "Construction loan secured",
+          "developer": "MG Developer and Vertical Developments",
+          "architect": null,
+          "scale": "74-unit luxury mixed-use condo project",
+          "summary": "MG Developer and Vertical Developments secured a $100 million construction loan from Benmark Capital for Alhambra Parc, a 74-unit luxury mixed-use condo project in Coral Gables. The development is located at 33 Alhambra Circle, just north of the downtown core.",
+          "source": "Commercial Observer",
+          "date": "Mon 08, 2026",
+          "link": "https://commercialobserver.com/2026/06/mg-vertical-alhambra-parc-florida/"
+        }
+      ]
+    },
+    {
       "date": "2026-05-28T21:17:55.842Z",
       "editionDate": "May 28, 2026",
       "projectCount": 4,
