@@ -1,6 +1,78 @@
 {
   "editions": [
     {
+      "date": "2026-06-18T16:36:17.992Z",
+      "editionDate": "June 18, 2026",
+      "projectCount": 5,
+      "projects": [
+        {
+          "name": "11 Andrews Avenue Development",
+          "type": "ground-up",
+          "location": "Downtown, Fort Lauderdale, FL",
+          "status": "Unanimously approved",
+          "developer": "Noah Bachow and partners",
+          "architect": null,
+          "scale": "378 units · 27-story mixed-use",
+          "summary": "Developers Noah Bachow and partners received unanimous city approval to increase the number of multifamily units from 316 to 378 at their 27-story mixed-use development at 11 Andrews Avenue in downtown Fort Lauderdale. The Fort Lauderdale City Commission also approved the development's design, allowing for a denser project in the area.",
+          "source": "The Real Deal South Florida",
+          "date": "Thu, 18 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/18/noah-bachow-greenlit-for-more-fort-lauderdale-resi-units/"
+        },
+        {
+          "name": "The Well Coconut Grove",
+          "type": "ground-up",
+          "location": "Coconut Grove, Miami, FL",
+          "status": "Permits filed",
+          "developer": "Terra · AB Asset Management",
+          "architect": null,
+          "scale": "447,969 sqft mixed-use · condominium units · retail space",
+          "summary": "David Martin’s Terra and AB Asset Management secured a $164.5 million construction permit for The Well Coconut Grove, a 447,969-square-foot mixed-use project. The development at 2835 Tigertail Avenue will include condominium units and retail space, marking a significant step after the developers acquired the site in 2021.",
+          "source": "The Real Deal South Florida",
+          "date": "Thu, 18 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/18/south-floridas-top-construction-permits-june-16-2026/"
+        },
+        {
+          "name": "Alton Delray",
+          "type": "ground-up",
+          "location": "Delray Beach, FL",
+          "status": "Groundbreaking",
+          "developer": "Kolter Multifamily",
+          "architect": null,
+          "scale": "386 units · 40% workforce housing",
+          "summary": "Kolter Multifamily has commenced construction on Alton Delray, a 386-unit apartment project under the Live Local Act, located at 2101 South Congress Avenue in Delray Beach. The groundbreaking follows the securing of $91.7 million in financing from U.S. Bank, with 155 units designated for workforce housing.",
+          "source": "The Real Deal South Florida",
+          "date": "Wed, 17 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/17/kolter-multifamily-nabs-92-million-for-delray-beach-rentals/"
+        },
+        {
+          "name": "Boca Raton Innovation Campus (BRIC) Mixed-Use Development",
+          "type": "master-plan",
+          "location": "Boca Raton, FL",
+          "status": "Announced",
+          "developer": "Steve Ross",
+          "architect": null,
+          "scale": "1.7 million sqft existing office · mixed-use 'micro city' proposal",
+          "summary": "Billionaire developer Steve Ross is reportedly nearing a deal to acquire the 1.7 million-square-foot Boca Raton Innovation Campus (BRIC), formerly IBM's campus, at 5000 T-Rex Avenue. Ross plans to transform the site into a mixed-use 'micro city,' leveraging existing approvals for the large-scale development in Boca Raton.",
+          "source": "The Real Deal South Florida",
+          "date": "Wed, 17 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/17/steve-ross-buying-boca-ratons-bric-plans-mixed-use-project/"
+        },
+        {
+          "name": "Edgewater Luxury Apartment Tower",
+          "type": "ground-up",
+          "location": "Edgewater, Miami, FL",
+          "status": "Announced",
+          "developer": "Cain · Kushner",
+          "architect": null,
+          "scale": "364-unit luxury apartment tower",
+          "summary": "Cain and Kushner have acquired a 1.5-acre site at 614 and 720 Northeast 27th Street in Edgewater, Miami, for $43.1 million, where they are planning a 364-unit luxury apartment tower. The acquisition signals their continued investment in the Edgewater area, anticipating apartment rent growth.",
+          "source": "The Real Deal South Florida",
+          "date": "Wed, 17 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/17/cain-kushner-buy-miami-apartment-site-from-oko-group/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-08T21:19:06.242Z",
       "editionDate": "June 8, 2026",
       "projectCount": 6,
