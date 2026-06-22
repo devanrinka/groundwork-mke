@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-06-22T17:27:11.802Z",
+      "editionDate": "June 22, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Luxury Hotel Conversion (Former Auto Dealership)",
+          "type": "renovation",
+          "location": "Downtown, Milwaukee, WI",
+          "status": "Files To Open",
+          "developer": null,
+          "architect": null,
+          "scale": null,
+          "summary": "A luxury hotel, developed through the conversion of a 1920s auto dealership, has filed for its opening in Downtown Milwaukee, indicating it will soon welcome its first guests.",
+          "source": "Urban Milwaukee",
+          "date": "Fri Jun 19, 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/19/long-anticipated-downtown-hotel-files-to-open/"
+        },
+        {
+          "name": "Downer Theatre Renovation",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Capital campaign launched",
+          "developer": "Milwaukee Film",
+          "architect": null,
+          "scale": "$8 million capital campaign",
+          "summary": "Milwaukee Film has launched an $8 million capital campaign to fund the renovation of the historic Downer Theatre, a project announced after the organization purchased the venue for $1.55 million.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Jun 22, 2026",
+          "link": "https://biztimes.com/milwaukee-film-gets-500000-donation-from-herzfeld-foundation-for-downer-theatre-capital-campaign/"
+        },
+        {
+          "name": "4448-4450 N. Oakland Ave. Affordable Housing Project",
+          "type": "ground-up",
+          "location": "Shorewood, WI",
+          "status": "Approved by Village",
+          "developer": "Spoerl Commercial LLC",
+          "architect": null,
+          "scale": "19 units",
+          "summary": "The Village of Shorewood has approved plans by Spoerl Commercial LLC for a 19-unit affordable housing project at 4448-4450 N. Oakland Ave., on the site of a former municipal parking lot.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Jun 22, 2026",
+          "link": "https://biztimes.com/some-shorewood-residents-object-to-site-for-affordable-housing-project-fret-loss-of-parking-lot/"
+        },
+        {
+          "name": "Storage Five Self-Storage Facility",
+          "type": "renovation",
+          "location": "West Allis, WI",
+          "status": "Plans filed with the city",
+          "developer": "Storage Five",
+          "architect": null,
+          "scale": "133,532 sqft · 884+ units",
+          "summary": "Storage Five has filed plans with the city of West Allis to renovate and expand an existing 133,532-square-foot building into a multi-story, climate-controlled self-storage facility, offering over 884 units.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Jun 22, 2026",
+          "link": "https://biztimes.com/self-storage-facility-planned-in-west-allis/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-04T20:36:12.753Z",
       "editionDate": "June 4, 2026",
       "projectCount": 4,
