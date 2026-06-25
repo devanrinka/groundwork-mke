@@ -1,6 +1,91 @@
 {
   "editions": [
     {
+      "date": "2026-06-25T15:40:58.812Z",
+      "editionDate": "June 25, 2026",
+      "projectCount": 6,
+      "projects": [
+        {
+          "name": "Missing Middle Housing Development",
+          "type": "ground-up",
+          "location": "South Side, Milwaukee, WI",
+          "status": "Announced",
+          "developer": null,
+          "architect": null,
+          "scale": "Affordable townhomes",
+          "summary": "Milwaukee County is seeking proposals from developers to build affordable townhomes on vacant land at S. 6th Street, aiming to provide 'missing middle' housing options on the South Side.",
+          "source": "Urban Milwaukee",
+          "date": "Wed, 24 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/24/mke-county-county-seeks-missing-middle-housing-for-south-side-land/"
+        },
+        {
+          "name": "Microsoft Data Center Campus",
+          "type": "ground-up",
+          "location": "Mount Pleasant, WI",
+          "status": "Construction completed (first center), Construction started (second center), Approved (up to 15 centers)",
+          "developer": "Microsoft",
+          "architect": null,
+          "scale": "Multiple data centers",
+          "summary": "Microsoft has completed construction of its first data center in Mount Pleasant and has commenced building a second. The Village Board previously approved plans that allow for the construction of up to 15 data centers on the site.",
+          "source": "Urban Milwaukee",
+          "date": "Wed, 24 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/24/microsoft-finishes-constructing-mount-pleasant-data-center-plans-more/"
+        },
+        {
+          "name": "Mitchell Park Domes Redevelopment Project",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Public review open",
+          "developer": null,
+          "architect": null,
+          "scale": "Redevelopment project",
+          "summary": "The redevelopment project for the Mitchell Park Domes is gaining strong donor support, with naming rights already awarded for the lobby and the Little Sprouts Dome, indicating ongoing progress and public engagement.",
+          "source": "Urban Milwaukee",
+          "date": "Wed, 24 Jun 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/24/domes-win-strong-donor-support/"
+        },
+        {
+          "name": "Escapology Locations",
+          "type": "renovation",
+          "location": "Historic Third Ward, Milwaukee, WI; Brookfield, WI",
+          "status": "Announced",
+          "developer": "Jerry Benson",
+          "architect": null,
+          "scale": "Two commercial entertainment venues",
+          "summary": "Escapology, an escape room adventure business, has announced plans to open two new Wisconsin locations. These will be situated in Milwaukee's Historic Third Ward and in Brookfield, expanding its presence in the state.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu, 25 Jun 2026",
+          "link": "https://biztimes.com/escapology-to-open-locations-in-third-ward-brookfield/"
+        },
+        {
+          "name": "Amazon Logistics Facility",
+          "type": "ground-up",
+          "location": "Sheboygan, WI",
+          "status": "Site purchased, Plans announced",
+          "developer": "Amazon.com Services LLC",
+          "architect": null,
+          "scale": "Logistics facility on 57-acre site",
+          "summary": "Amazon, through its subsidiary Amazon.com Services LLC, has acquired a 57-acre site in Sheboygan for $2 million. The company previously announced its intentions to construct a new logistics facility on the purchased land.",
+          "source": "BizTimes Milwaukee",
+          "date": "Wed, 24 Jun 2026",
+          "link": "https://biztimes.com/amazon-buys-sheboygan-site-for-2-million/"
+        },
+        {
+          "name": "The Gund Company Expansion",
+          "type": "ground-up",
+          "location": "Waukesha, WI",
+          "status": "Planning",
+          "developer": "The Gund Company",
+          "architect": null,
+          "scale": "110,000 sqft addition",
+          "summary": "The Gund Company, a manufacturer of composite materials, is planning a significant 110,000-square-foot expansion to its current 65,000-square-foot facility located at 809 Philip Dr. in Waukesha.",
+          "source": "BizTimes Milwaukee",
+          "date": "Wed, 24 Jun 2026",
+          "link": "https://biztimes.com/manufacturer-plans-major-expansion-in-waukesha/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-22T17:27:11.802Z",
       "editionDate": "June 22, 2026",
       "projectCount": 4,

@@ -1,6 +1,78 @@
 {
   "editions": [
     {
+      "date": "2026-06-25T15:41:31.580Z",
+      "editionDate": "June 25, 2026",
+      "projectCount": 5,
+      "projects": [
+        {
+          "name": "Link at Douglas, 4th Tower",
+          "type": "ground-up",
+          "location": "3070 Southwest 37th Avenue, Miami, FL",
+          "status": "Permits filed",
+          "developer": null,
+          "architect": null,
+          "scale": "$130 million construction project",
+          "summary": "A $130 million construction permit was issued for the fourth and final tower of the Link at Douglas mixed-use development in Miami. This significant permit marks a key milestone for the extensive project located near the Douglas Road Metrorail station.",
+          "source": "The Real Deal South Florida",
+          "date": "Jun 25, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/25/south-floridas-top-construction-permits-june-24-2026/"
+        },
+        {
+          "name": "Breitling Branded Condo Tower",
+          "type": "ground-up",
+          "location": "Brickell, Miami, FL",
+          "status": "Announced",
+          "developer": "Partners Group",
+          "architect": null,
+          "scale": "condo tower",
+          "summary": "A Swiss investment and private equity firm, Partners Group, is planning a new Breitling branded condo tower in Miami's Brickell neighborhood. This announcement adds another luxury branded residence to South Florida's rapidly expanding market, testing its capacity.",
+          "source": "The Real Deal South Florida",
+          "date": "Jun 25, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/25/partners-group-plans-breitling-branded-brickell-condo-tower/"
+        },
+        {
+          "name": "Lincoln Road Food Hall",
+          "type": "renovation",
+          "location": "Lincoln Road, Miami Beach, FL",
+          "status": "Announced",
+          "developer": "Michael Comras",
+          "architect": null,
+          "scale": "18,000 sqft food hall",
+          "summary": "An 18,000-square-foot food hall is set to open on Lincoln Road in Miami Beach, taking over the former Time Out Market space. This new commercial development is part of a broader leasing surge aiming to revitalize the iconic pedestrian promenade.",
+          "source": "The Real Deal South Florida",
+          "date": "Jun 24, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/24/south-beachs-lincoln-road-nabs-food-hall-amid-leasing-surge/"
+        },
+        {
+          "name": "Hollywood Beach Resort Redevelopment",
+          "type": "master-plan",
+          "location": "Hollywood Beach, Hollywood, FL",
+          "status": "Under contract",
+          "developer": "Related Group, BH Group",
+          "architect": null,
+          "scale": "Redevelopment of a century-old resort",
+          "summary": "Related Group and BH Group have placed the century-old Hollywood Beach Resort under contract, signaling plans to redevelop the vacant oceanfront landmark. This proposed project aims to revitalize a significant piece of Hollywood's history.",
+          "source": "The Real Deal South Florida",
+          "date": "Jun 24, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/24/jorge-perez-bh-group-in-contract-for-hollywood-beach-resort/"
+        },
+        {
+          "name": "Rosewood Residences West Palm Beach",
+          "type": "ground-up",
+          "location": "2001 North Flagler Drive, West Palm Beach, FL",
+          "status": "City approved",
+          "developer": "Related Group, BH Group",
+          "architect": null,
+          "scale": "Luxury condo tower",
+          "summary": "The city of West Palm Beach has approved the Rosewood Residences, a new luxury condo tower planned by Related Group and BH Group. This project, located on North Flagler Drive, is part of a larger development push in the area including adjacent towers.",
+          "source": "The Real Deal South Florida",
+          "date": "Jun 24, 2026",
+          "link": "https://therealdeal.com/miami/2026/06/24/related-group-bh-group-greenlighted-for-rosewood-residences/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-18T16:36:17.992Z",
       "editionDate": "June 18, 2026",
       "projectCount": 5,
