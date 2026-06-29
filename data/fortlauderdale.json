@@ -1,6 +1,78 @@
 {
   "editions": [
     {
+      "date": "2026-06-29T16:35:48.875Z",
+      "editionDate": "June 29, 2026",
+      "projectCount": 5,
+      "projects": [
+        {
+          "name": "Fort Lauderdale City Hall",
+          "type": "ground-up",
+          "location": "Fort Lauderdale, FL",
+          "status": "Back for commission vote",
+          "developer": "FTL City Hall Partners LLC",
+          "architect": null,
+          "scale": "14-story building",
+          "summary": "A renegotiated agreement for a new 14-story, oval-shaped Fort Lauderdale city hall is returning for a commission vote. The revised deal with FTL City Hall Partners LLC reduces the cost by over $50 million for the sci-fi-reminiscent design. The city has been pursuing a new city hall for about a year.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri, 26 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/26/fort-lauderdale-city-hall-construction-item-back-for-a-vote/"
+        },
+        {
+          "name": "Town Center at Boca Raton (former Sears site redevelopment)",
+          "type": "master-plan",
+          "location": "Boca Raton, FL",
+          "status": "Plans filed",
+          "developer": "Simon Property Group",
+          "architect": null,
+          "scale": "Mixed-use project on 18.6-acre site including hotel, multifamily, and retail",
+          "summary": "Simon Property Group has filed plans to transform the shuttered 18.6-acre Sears site at the Town Center at Boca Raton into a mixed-use 'main street' development. The proposal includes a hotel, multifamily residences, and retail components, joining a trend of mall redevelopments in South Florida.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri, 26 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/26/simon-property-group-goes-mixed-use-with-boca-raton-sears/"
+        },
+        {
+          "name": "The Rivani rooftop expansion",
+          "type": "renovation",
+          "location": "Miami Beach, FL",
+          "status": "Unanimously approved on first reading",
+          "developer": "Robert Rivani (Black Lion Investment Group)",
+          "architect": null,
+          "scale": "Estimated $50 million rooftop addition",
+          "summary": "Miami Beach City Commission unanimously approved on first reading Robert Rivani’s plan for an estimated $50 million rooftop addition to his seven-story mixed-use building, The Rivani, at 1691 Michigan Avenue. The approval also extends the ground lease for the city-owned land into the next century.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri, 26 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/26/robert-rivani-seeks-miami-beach-ground-lease-extension/"
+        },
+        {
+          "name": "Miami-Dade Schools HQ / Crescent Heights Mixed-Use Tower",
+          "type": "ground-up",
+          "location": "Omni neighborhood, Miami, FL",
+          "status": "Agreement approved",
+          "developer": "Crescent Heights",
+          "architect": null,
+          "scale": "43-story mixed-use development",
+          "summary": "Miami-Dade County Public Schools has moved forward with a revived land swap deal to relocate its headquarters to a planned 43-story mixed-use tower in Miami’s Omni neighborhood. Developed by Crescent Heights, the project will be built on two parking lots, one owned by the school district and another by the developer.",
+          "source": "The Real Deal South Florida",
+          "date": "Fri, 26 Jun 2026",
+          "link": "https://therealdeal.com/miami/2026/06/26/miami-dade-schools-revives-crescent-heights-land-swap/"
+        },
+        {
+          "name": "NUVO Delray Beach",
+          "type": "ground-up",
+          "location": "near Delray Beach, Palm Beach County, FL",
+          "status": "Construction loan secured",
+          "developer": "North American Development Group (NADG)",
+          "architect": null,
+          "scale": "476-unit multifamily development",
+          "summary": "North American Development Group (NADG) has secured a $120 million construction loan from Wells Fargo for NUVO Delray Beach, a 476-unit multifamily development. The project is planned on agricultural land located at 9494 Ilumina Way, near Delray Beach in Palm Beach County.",
+          "source": "Commercial Observer",
+          "date": "Fri, 26 Jun 2026",
+          "link": "https://commercialobserver.com/2026/06/nadg-north-american-development-group-nuvo-delray-beach/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-25T15:41:31.580Z",
       "editionDate": "June 25, 2026",
       "projectCount": 5,

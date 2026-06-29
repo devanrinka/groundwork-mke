@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-06-29T16:35:20.358Z",
+      "editionDate": "June 29, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "New Apartment Building for Walker’s Point",
+          "type": "ground-up",
+          "location": "Walker’s Point, Milwaukee, WI",
+          "status": "Announced",
+          "developer": null,
+          "architect": null,
+          "scale": "Apartment building",
+          "summary": "A new apartment building is planned for the Walker's Point neighborhood in Milwaukee, which will replace a surface parking lot. This development aims to add new housing options to the area.",
+          "source": "Urban Milwaukee",
+          "date": "Fri Jun 26, 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/26/new-apartment-building-planned-for-walkers-point/"
+        },
+        {
+          "name": "Austin Commons",
+          "type": "ground-up",
+          "location": "Bay View, Milwaukee, WI",
+          "status": "Partial Funding Advanced",
+          "developer": null,
+          "architect": null,
+          "scale": "Affordable housing development",
+          "summary": "The Milwaukee Common Council has advanced partial funding for Austin Commons, a delayed affordable housing development located in the Bay View neighborhood. This critical funding decision moves the project forward to provide much-needed affordable housing.",
+          "source": "Urban Milwaukee",
+          "date": "Fri Jun 26, 2026",
+          "link": "https://urbanmilwaukee.com/2026/06/26/council-advances-partial-funding-for-delayed-bay-view-affordable-housing-development/"
+        },
+        {
+          "name": "Northwestern Mutual’s downtown headquarters campus reconstruction",
+          "type": "renovation",
+          "location": "Downtown, Milwaukee, WI",
+          "status": "Ongoing",
+          "developer": "Northwestern Mutual",
+          "architect": null,
+          "scale": "$500 million",
+          "summary": "Northwestern Mutual is undertaking a substantial $500 million reconstruction project at its downtown Milwaukee headquarters campus. This major renovation is one of the significant economic development initiatives shaping southeastern Wisconsin.",
+          "source": "BizTimes Milwaukee",
+          "date": "Sun Jun 28, 2026",
+          "link": "https://biztimes.com/these-62-projects-are-shaping-the-future-of-southeastern-wisconsin/"
+        },
+        {
+          "name": "100 East redevelopment",
+          "type": "renovation",
+          "location": "Downtown, Milwaukee, WI",
+          "status": "Planned",
+          "developer": null,
+          "architect": null,
+          "scale": null,
+          "summary": "The planned 100 East redevelopment is noted as a significant economic development project located in downtown Milwaukee. This project is anticipated to contribute to the future growth and transformation of southeastern Wisconsin.",
+          "source": "BizTimes Milwaukee",
+          "date": "Sun Jun 28, 2026",
+          "link": "https://biztimes.com/these-62-projects-are-shaping-the-future-of-southeastern-wisconsin/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-25T15:40:58.812Z",
       "editionDate": "June 25, 2026",
       "projectCount": 6,
