@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-07-09T15:57:53.562Z",
+      "editionDate": "July 9, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Bay View Site Development",
+          "type": "ground-up",
+          "location": "Bay View, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "null",
+          "architect": "null",
+          "scale": "14-story tower",
+          "summary": "The City of Milwaukee is restarting its efforts to develop a long-vacant site in Bay View. A conceptual plan has been proposed for a 14-story tower with lake views, aiming to bring significant development to the prominent location.",
+          "source": "Urban Milwaukee",
+          "date": "Thu, 09 Jul 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/08/city-restarting-process-of-developing-long-vacant-bay-view-site/"
+        },
+        {
+          "name": "Bay View Affordable Development",
+          "type": "ground-up",
+          "location": "Bay View, Milwaukee, WI",
+          "status": "Key Approval",
+          "developer": "null",
+          "architect": "null",
+          "scale": "Affordable residential development",
+          "summary": "An affordable housing development located in Bay View has received a crucial municipal approval, despite some opposition. This significant milestone allows the project to move forward in the development process.",
+          "source": "Urban Milwaukee",
+          "date": "Tue, 07 Jul 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/07/bay-view-affordable-development-scores-key-approval-but-objections-remain/"
+        },
+        {
+          "name": "Dunkin' (Wauwatosa)",
+          "type": "renovation",
+          "location": "Wauwatosa, WI",
+          "status": "Permits filed",
+          "developer": "null",
+          "architect": "null",
+          "scale": "Commercial restaurant",
+          "summary": "A new Dunkin' location is proposed for a former Starbucks site at 151 N. Mayfair Road in Wauwatosa. A conditional use permit application has been filed with the city's Plan Commission for the renovation of the existing commercial building.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu, 09 Jul 2026",
+          "link": "https://biztimes.com/dunkin-donuts-planned-for-former-starbucks-location-in-wauwatosa/"
+        }
+      ]
+    },
+    {
       "date": "2026-06-29T16:35:20.358Z",
       "editionDate": "June 29, 2026",
       "projectCount": 4,
