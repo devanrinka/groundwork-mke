@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-07-16T15:03:45.639Z",
+      "editionDate": "July 16, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Kinship Community Food Center Expansion",
+          "type": "ground-up",
+          "location": "Harambee neighborhood, Milwaukee, WI",
+          "status": "Groundbreaking",
+          "developer": "Kinship Community Food Center",
+          "architect": null,
+          "scale": "28,000 sqft facility · $18 million capital campaign",
+          "summary": "Kinship Community Food Center held a groundbreaking for its $18 million, 28,000 sqft new facility in Milwaukee's Harambee neighborhood. This expansion aims to significantly increase food access, workforce development, and support services for the community.",
+          "source": "BizTimes Milwaukee",
+          "date": "Wed Jul 15, 2026",
+          "link": "https://biztimes.com/kinship-hopes-18-million-expansion-will-redefine-what-a-food-pantry-can-be/"
+        },
+        {
+          "name": "Bay View Affordable Housing",
+          "type": "ground-up",
+          "location": "Bay View, Milwaukee, WI",
+          "status": "Unanimously approved",
+          "developer": null,
+          "architect": null,
+          "scale": "100-unit apartment complex · $33 million",
+          "summary": "A controversial $33 million, 100-unit affordable apartment complex in Milwaukee's Bay View neighborhood received unanimous approval and a subsidy from the Common Council. This project aims to bring new affordable housing options to the area.",
+          "source": "Urban Milwaukee",
+          "date": "Wed Jul 15, 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/15/controversial-bay-view-affordable-housing-sails-though-council/"
+        },
+        {
+          "name": "Fox Communities Credit Union - Oconomowoc Branch",
+          "type": "ground-up",
+          "location": "Oconomowoc, WI",
+          "status": "Plans filed with Plan Commission",
+          "developer": "Fox Communities Credit Union",
+          "architect": null,
+          "scale": "Commercial building",
+          "summary": "Fox Communities Credit Union filed plans with Oconomowoc's Plan Commission to build a new branch location at 1283 Olympia Fields Drive. This proposed facility would mark the credit union's second branch in southeastern Wisconsin.",
+          "source": "BizTimes Milwaukee",
+          "date": "Wed Jul 15, 2026",
+          "link": "https://biztimes.com/fox-communities-credit-union-plans-second-location-for-southeastern-wisconsin/"
+        }
+      ]
+    },
+    {
       "date": "2026-07-09T15:57:53.562Z",
       "editionDate": "July 9, 2026",
       "projectCount": 3,
