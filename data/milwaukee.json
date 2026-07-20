@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-07-20T15:05:16.082Z",
+      "editionDate": "July 20, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Milwaukee County Courthouse Project",
+          "type": "renovation",
+          "location": "Milwaukee County, Milwaukee, WI",
+          "status": "Public review open",
+          "developer": null,
+          "architect": null,
+          "scale": "$897 million",
+          "summary": "A proposed $897 million project for the Milwaukee County Courthouse is facing political challenges, with the finance chair attempting to block a public referendum that would allow the project to move forward. This significant public undertaking is currently in a critical public approval phase.",
+          "source": "Urban Milwaukee",
+          "date": "Jul 19, 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/18/mke-county-finance-chair-moves-to-block-courthouse-referendum/"
+        },
+        {
+          "name": "Amani Homeownership TIF",
+          "type": "ground-up",
+          "location": "Amani, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "CDA",
+          "architect": null,
+          "scale": "95 houses",
+          "summary": "A proposed Tax Incremental Financing (TIF) district in Milwaukee's Amani neighborhood aims to spur the development of 95 new single-family homes. This initiative is designed to expand homeownership opportunities and is part of the Community Development Alliance's ongoing housing pipeline efforts.",
+          "source": "Urban Milwaukee",
+          "date": "Jul 17, 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/17/amani-homeownership-tif-would-add-95-houses-to-cda-pipeline/"
+        },
+        {
+          "name": "Former Wausau Equipment Plant Conversion to Self-Storage",
+          "type": "renovation",
+          "location": "New Berlin Industrial Park, New Berlin, WI",
+          "status": "Announced",
+          "developer": "Cedarburg Storage Company LLC",
+          "architect": null,
+          "scale": "Former plant and headquarters",
+          "summary": "An affiliate of Cedarburg Storage Company LLC has acquired the former Wausau Equipment plant and headquarters in New Berlin. The site, vacated by Wausau Equipment, is expected to be redeveloped and converted into a new self-storage facility.",
+          "source": "BizTimes Milwaukee",
+          "date": "Jul 20, 2026",
+          "link": "https://biztimes.com/self-storage-company-buys-former-wausau-equipment-plant-and-hq-in-new-berlin/"
+        }
+      ]
+    },
+    {
       "date": "2026-07-16T15:03:45.639Z",
       "editionDate": "July 16, 2026",
       "projectCount": 3,
