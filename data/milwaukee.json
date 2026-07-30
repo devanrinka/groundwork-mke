@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-07-30T15:11:46.922Z",
+      "editionDate": "July 30, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Medical College of Wisconsin Student Housing",
+          "type": "ground-up",
+          "location": "Wauwatosa, WI",
+          "status": "Building",
+          "developer": "Medical College of Wisconsin",
+          "architect": null,
+          "scale": "266 units · $70 million",
+          "summary": "The Medical College of Wisconsin is constructing its first-ever student housing, a $70 million, four-story complex comprising 266 units. This project aims to provide more affordable housing options on the campus.",
+          "source": "Urban Milwaukee",
+          "date": "Wed, 29 Jul 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/29/medical-college-of-wisconsin-building-first-student-housing-in-its-history/"
+        },
+        {
+          "name": "Carmen Southgate Campus",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Grand opening",
+          "developer": "Carmen Schools",
+          "architect": null,
+          "scale": "$55 million",
+          "summary": "Carmen Schools has unveiled its new $55 million Southgate Campus, a three-story school featuring a STEAM lab, a large gym, and common areas. The new campus is scheduled to open later this month.",
+          "source": "Urban Milwaukee",
+          "date": "Tue, 28 Jul 2026",
+          "link": "https://urbanmilwaukee.com/2026/07/28/carmen-unveils-55-million-southgate-campus/"
+        },
+        {
+          "name": "Concordia University Wisconsin School of Nursing Expansion",
+          "type": "renovation",
+          "location": "Mequon, WI",
+          "status": "Announced",
+          "developer": "Concordia University Wisconsin",
+          "architect": null,
+          "scale": "Expanded educational capacity",
+          "summary": "Concordia University Wisconsin is investing in a major expansion of its School of Nursing facilities to address growing shortages in nursing and healthcare professionals. This initiative aims to strengthen the region's healthcare workforce pipeline.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu, 30 Jul 2026",
+          "link": "https://biztimes.com/concordia-expands-health-care-education-to-strengthen-wisconsins-workforce-pipeline/"
+        },
+        {
+          "name": "The Harvest at Pabst Farms",
+          "type": "master-plan",
+          "location": "Oconomowoc, WI",
+          "status": "Announced",
+          "developer": "Cobalt Partners",
+          "architect": null,
+          "scale": "Mixed-use combining housing, employment, retail, hospitality, recreation, open space",
+          "summary": "The Harvest at Pabst Farms is a large mixed-use master-planned community in Oconomowoc, designed to integrate housing, employment, retail, hospitality, recreation, and open spaces. Developed by Cobalt Partners, the project aims to support regional growth by addressing various community needs.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu, 30 Jul 2026",
+          "link": "https://biztimes.com/the-harvest-at-pabst-farms-cultivating-regional-growth-and-opportunity/"
+        }
+      ]
+    },
+    {
       "date": "2026-07-27T15:38:27.274Z",
       "editionDate": "July 27, 2026",
       "projectCount": 5,
@@ -685,57 +744,6 @@
           "source": "Urban Milwaukee",
           "date": "May 05, 2026",
           "link": "https://urbanmilwaukee.com/2026/05/05/council-poised-to-reject-unusual-affordable-housing-proposal/"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-06T15:07:52.822Z",
-      "editionDate": "May 6, 2026",
-      "projectCount": 4,
-      "projects": [
-        {
-          "name": "Affordable Housing Conversion Proposal",
-          "type": "renovation",
-          "location": "Milwaukee, WI",
-          "status": "Council Poised To Reject",
-          "scale": "Two existing apartment complexes",
-          "summary": "A developer is seeking city approval to convert two existing 'luxury' apartment complexes in Milwaukee into affordable housing units, a proposal the city council is poised to reject.",
-          "source": "Urban Milwaukee",
-          "date": "May 05, 2026",
-          "link": "https://urbanmilwaukee.com/2026/05/05/council-poised-to-reject-unusual-affordable-housing-proposal/"
-        },
-        {
-          "name": "New Milwaukee Library",
-          "type": "ground-up",
-          "location": "Milwaukee, WI",
-          "status": "Announced",
-          "scale": "Replacement for aging branch library",
-          "summary": "A new library branch is being planned for a key location in Milwaukee to replace an aging existing facility, a project the city has sought for seven years.",
-          "source": "Urban Milwaukee",
-          "date": "May 04, 2026",
-          "link": "https://urbanmilwaukee.com/2026/05/04/new-library-planned-for-key-milwaukee-location/"
-        },
-        {
-          "name": "Versiti Blood Research Institute expansion",
-          "type": "ground-up",
-          "location": "Milwaukee, WI",
-          "status": "Topping off ceremony",
-          "scale": "$79 million expansion",
-          "summary": "The Versiti Blood Research Institute in Milwaukee celebrated a topping-off ceremony for its $79 million facility expansion, marking a significant construction milestone.",
-          "source": "BizTimes Milwaukee",
-          "date": "May 05, 2026",
-          "link": "https://biztimes.com/see-photos-from-versiti-blood-research-institute-topping-off-ceremony/"
-        },
-        {
-          "name": "Fellowship Village",
-          "type": "ground-up",
-          "location": "86th and Good Hope Road, Milwaukee, WI",
-          "status": "Public review open",
-          "scale": "190 units of market-rate luxury apartments",
-          "summary": "Christian Faith Fellowship Church proposes building Fellowship Village, a 190-unit market-rate luxury apartment complex for young professionals on Milwaukee's far northwest side, a plan currently facing opposition from local residents.",
-          "source": "BizTimes Milwaukee",
-          "date": "May 05, 2026",
-          "link": "https://biztimes.com/residents-fighting-apartment-development-planned-by-church-at-86th-and-good-hope/"
         }
       ]
     }
