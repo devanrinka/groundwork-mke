@@ -1,6 +1,104 @@
 {
   "editions": [
     {
+      "date": "2026-08-10T14:16:36.367Z",
+      "editionDate": "August 10, 2026",
+      "projectCount": 7,
+      "projects": [
+        {
+          "name": "Southside Townhomes",
+          "type": "ground-up",
+          "location": "Southside, Milwaukee, WI",
+          "status": "Groundbreaking",
+          "developer": "VIA CDC",
+          "architect": null,
+          "scale": "multiple units",
+          "summary": "Work has begun on new owner-occupied, affordable townhomes on Milwaukee's Southside. This project by VIA CDC aims to increase affordable housing options in the area.",
+          "source": "Urban Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://urbanmilwaukee.com/2026/08/07/work-starts-on-southside-townhomes/"
+        },
+        {
+          "name": "Data Center Power Line Plan (Port Washington)",
+          "type": "master-plan",
+          "location": "Port Washington, WI",
+          "status": "Application revoked",
+          "developer": "ATC",
+          "architect": null,
+          "scale": "$1.7 billion project",
+          "summary": "Regulators have forced a redo for ATC's $1.7 billion power line plan for a data center in Port Washington, revoking the application due to its changing scope. This decision impacts a significant energy infrastructure project in the area.",
+          "source": "Urban Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://urbanmilwaukee.com/2026/08/07/regulators-force-do-over-for-1-7-billion-data-center-power-line-plan/"
+        },
+        {
+          "name": "Key Bike Trail Extension",
+          "type": "master-plan",
+          "location": "Milwaukee County, WI",
+          "status": "Grant won",
+          "developer": "City of Milwaukee",
+          "architect": null,
+          "scale": null,
+          "summary": "Milwaukee has secured a grant to extend a key bike trail, connecting the city more thoroughly with its south suburbs. This infrastructure project aims to enhance regional connectivity.",
+          "source": "Urban Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://urbanmilwaukee.com/2026/08/07/milwaukee-wins-grant-to-extend-key-bike-trail/"
+        },
+        {
+          "name": "Affordable Housing Conversion",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "State Authority Endorsed",
+          "developer": "California organizations",
+          "architect": null,
+          "scale": "multiple units",
+          "summary": "A state authority has endorsed an affordable housing conversion project in Milwaukee, overruling prior rejection by the city. This project, spearheaded by California organizations, aims to create new affordable housing units.",
+          "source": "Urban Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://urbanmilwaukee.com/2026/08/07/after-city-rejects-it-state-authority-endorses-affordable-housing-conversion/"
+        },
+        {
+          "name": "Milwaukee Public Museum Site Redevelopment",
+          "type": "master-plan",
+          "location": "Downtown, Milwaukee, WI",
+          "status": "Development proposals sought",
+          "developer": "Milwaukee County (seeking proposals)",
+          "architect": null,
+          "scale": "Redevelopment of museum site",
+          "summary": "Milwaukee County is soliciting development proposals for the current Milwaukee Public Museum site, which will become vacant next year. The move of the museum opens up a significant downtown parcel for redevelopment.",
+          "source": "BizTimes Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://biztimes.com/milwaukee-county-seeks-development-proposals-for-current-milwaukee-public-museum-site/"
+        },
+        {
+          "name": "Penny Lane Apartments",
+          "type": "ground-up",
+          "location": "Village of Somers, Kenosha County, WI",
+          "status": "Plans submitted to Plan Commission",
+          "developer": "1665 Penny Lane LLC (affiliate of RE Development Solutions, Inc.)",
+          "architect": null,
+          "scale": "108-unit apartment building",
+          "summary": "A 108-unit apartment building is planned for a vacant 5-acre site along Lake Michigan in the Village of Somers. Plans for the ground-up residential development have been submitted to the village’s Plan Commission.",
+          "source": "BizTimes Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://biztimes.com/apartment-development-planned-along-the-lakefront-in-kenosha-county/"
+        },
+        {
+          "name": "Wipfli Headquarters Relocation",
+          "type": "renovation",
+          "location": "Downtown, Milwaukee, WI",
+          "status": "Announced",
+          "developer": "Wipfli",
+          "architect": null,
+          "scale": "Corporate headquarters",
+          "summary": "Accounting firm Wipfli plans to relocate its corporate headquarters from Wauwatosa to downtown Milwaukee. This move represents a significant commercial lease or renovation project in the downtown area.",
+          "source": "BizTimes Milwaukee",
+          "date": "Fri, 07 Aug 2026",
+          "link": "https://biztimes.com/biztimes-editor-talks-on-channel-12-about-wipflis-plans-to-move-its-hq-downtown/"
+        }
+      ]
+    },
+    {
       "date": "2026-07-30T15:11:46.922Z",
       "editionDate": "July 30, 2026",
       "projectCount": 4,
@@ -698,52 +796,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Mon May 11, 2026",
           "link": "https://biztimes.com/aug-prep-gala-raises-more-than-2-5-million-ahead-of-north-campus-launch/"
-        }
-      ]
-    },
-    {
-      "date": "2026-05-06T19:10:55.619Z",
-      "editionDate": "May 6, 2026",
-      "projectCount": 3,
-      "projects": [
-        {
-          "name": "Bank of America South Side Branch",
-          "type": "ground-up",
-          "location": "South Side, Milwaukee, WI",
-          "status": "Announced",
-          "developer": "Bank of America",
-          "architect": null,
-          "scale": "Commercial building (replacing a Dollar Tree)",
-          "summary": "Bank of America plans to replace an existing Dollar Tree store on Milwaukee's South Side with a new branch. This marks the nation's second-largest bank's entry into the Milwaukee market at several locations, indicating significant commercial expansion.",
-          "source": "Urban Milwaukee",
-          "date": "May 06, 2026",
-          "link": "https://urbanmilwaukee.com/2026/05/06/bank-of-america-plans-to-replace-dollar-tree-on-south-side/"
-        },
-        {
-          "name": "Kingdom Faith Senior Housing Complex",
-          "type": "ground-up",
-          "location": "Milwaukee (near city border), WI",
-          "status": "Announced",
-          "developer": "Kingdom Faith Church",
-          "architect": null,
-          "scale": "181 units · senior apartments · memory care center · church expansion",
-          "summary": "Kingdom Faith Church is planning a major ground-up development near Milwaukee's city border. The complex will feature 181 senior apartment units, a memory care center, and an expanded church facility, addressing local senior housing and community needs.",
-          "source": "Urban Milwaukee",
-          "date": "May 06, 2026",
-          "link": "https://urbanmilwaukee.com/2026/05/06/kingdom-faith-church-plans-181-unit-senior-housing-complex/"
-        },
-        {
-          "name": "Milwaukee Affordable Housing Conversion Proposal",
-          "type": "renovation",
-          "location": "Milwaukee, WI",
-          "status": "Public review open",
-          "developer": null,
-          "architect": null,
-          "scale": "Conversion of two 'luxury' residential complexes",
-          "summary": "A proposal has been submitted to the Milwaukee City Council to convert two existing 'luxury' residential complexes into affordable housing units. This major renovation project requires city approval and is currently undergoing public review, with the Council reportedly poised to reject it.",
-          "source": "Urban Milwaukee",
-          "date": "May 05, 2026",
-          "link": "https://urbanmilwaukee.com/2026/05/05/council-poised-to-reject-unusual-affordable-housing-proposal/"
         }
       ]
     }
