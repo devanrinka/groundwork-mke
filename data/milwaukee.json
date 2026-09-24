@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-09-24T17:47:05.944Z",
+      "editionDate": "September 24, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Milwaukee Cruise Ship Dock",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Completion delayed",
+          "developer": null,
+          "architect": null,
+          "scale": null,
+          "summary": "The project to construct or significantly expand a cruise ship dock in Milwaukee has faced multiple completion delays throughout the current year.",
+          "source": "Urban Milwaukee",
+          "date": "Wed Sep 23, 2026",
+          "link": "https://urbanmilwaukee.com/2026/09/23/cruise-ship-dock-delayed-again/"
+        },
+        {
+          "name": "Port Washington Data Center Campus",
+          "type": "ground-up",
+          "location": "Port Washington, WI",
+          "status": "Legal challenge dismissed",
+          "developer": null,
+          "architect": null,
+          "scale": "$15 billion campus",
+          "summary": "A judge has dismissed a legal challenge against the $15 billion incentive package for a new data center campus in Port Washington, clearing a significant hurdle for the project to proceed.",
+          "source": "Urban Milwaukee",
+          "date": "Wed Sep 23, 2026",
+          "link": "https://urbanmilwaukee.com/2026/09/23/judge-dismisses-challenge-to-port-washington-data-center-subsidy/"
+        },
+        {
+          "name": "Moss Universal Park (Wisconsin Avenue Park Overhaul)",
+          "type": "renovation",
+          "location": "Wisconsin Avenue Park, Milwaukee, WI",
+          "status": "Groundbreaking",
+          "developer": "Milwaukee County",
+          "architect": null,
+          "scale": "Universally accessible overhaul · multi-phase",
+          "summary": "Groundbreaking has occurred for Moss Universal Park, a multi-phase project to transform Wisconsin Avenue Park into a universally accessible public space, with fundraising efforts still ongoing.",
+          "source": "Urban Milwaukee",
+          "date": "Tue Sep 22, 2026",
+          "link": "https://urbanmilwaukee.com/2026/09/22/mke-county-despite-groundbreaking-fundraising-ongoing-for-moss-universal-park/"
+        }
+      ]
+    },
+    {
       "date": "2026-08-20T13:49:00.458Z",
       "editionDate": "August 20, 2026",
       "projectCount": 4,
@@ -698,65 +744,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Mon Jun 22, 2026",
           "link": "https://biztimes.com/self-storage-facility-planned-in-west-allis/"
-        }
-      ]
-    },
-    {
-      "date": "2026-06-04T20:36:12.753Z",
-      "editionDate": "June 4, 2026",
-      "projectCount": 4,
-      "projects": [
-        {
-          "name": "Bay View Piggly Wiggly Renovation",
-          "type": "renovation",
-          "location": "Bay View, Milwaukee, WI",
-          "status": "Grand opening",
-          "developer": null,
-          "architect": null,
-          "scale": "Multimillion-dollar project",
-          "summary": "The Piggly Wiggly grocery store in Bay View has completed a multimillion-dollar renovation, featuring aesthetic updates, a revised store layout, and an expanded inventory. This project enhances the shopping experience and revitalizes the local community grocery store.",
-          "source": "Urban Milwaukee",
-          "date": "Thu, 04 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/04/bay-view-piggly-wiggly-unveils-renovation/"
-        },
-        {
-          "name": "Dulce Diabla New Location",
-          "type": "ground-up",
-          "location": "Muskego Way neighborhood, Milwaukee, WI",
-          "status": "Announced",
-          "developer": "Dulce Diabla",
-          "architect": null,
-          "scale": "Bar, dance club, and sit-down dining",
-          "summary": "Dulce Diabla announced plans to establish a new location in Milwaukee's Muskego Way neighborhood, which will feature a bar, dance club, and sit-down dining. This project aims to create a new entertainment and culinary venue on the city's south side.",
-          "source": "Urban Milwaukee",
-          "date": "Thu, 04 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/04/southside-bar-eyes-new-location/"
-        },
-        {
-          "name": "Multiple Affordable Housing Projects",
-          "type": "ground-up",
-          "location": "Milwaukee, WI",
-          "status": "Funding approved",
-          "developer": null,
-          "architect": null,
-          "scale": "709 units across 8 projects",
-          "summary": "State tax credits have been approved for eight distinct projects across Milwaukee, totaling 709 new affordable apartments. These developments are slated for various neighborhoods, from Downtown to the central city, aiming to expand affordable housing options.",
-          "source": "Urban Milwaukee",
-          "date": "Wed, 03 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/03/funding-approved-for-709-new-affordable-apartments-in-milwaukee/"
-        },
-        {
-          "name": "Kenosha Innovation Neighborhood (KIN)",
-          "type": "master-plan",
-          "location": "Kenosha, WI",
-          "status": "Announced",
-          "developer": "Kenosha Innovation Neighborhood (KIN)",
-          "architect": null,
-          "scale": "Neighborhood-scale development",
-          "summary": "The Kenosha Innovation Neighborhood (KIN), a significant master-plan development, announced a strategic partnership with the Wisconsin Women’s Business Initiative Corporation (WWBIC). This collaboration strengthens KIN's mission to serve as a regional hub for entrepreneurs and small businesses, marking a further step in its development.",
-          "source": "WisBusiness",
-          "date": "Thu, 04 Jun 2026",
-          "link": "https://www.wisbusiness.com/2026/kenosha-innovation-neighborhood-announces-wwbic-as-impact-partner/"
         }
       ]
     }
