@@ -1,6 +1,117 @@
 {
   "editions": [
     {
+      "date": "2026-10-12T21:30:20.639Z",
+      "editionDate": "October 12, 2026",
+      "projectCount": 8,
+      "projects": [
+        {
+          "name": "New Burger King South Side",
+          "type": "ground-up",
+          "location": "South Side, Milwaukee, WI",
+          "status": "Announced",
+          "developer": null,
+          "architect": null,
+          "scale": "Commercial restaurant",
+          "summary": "A new Burger King restaurant is planned for Milwaukee's South Side. This development is part of the company's broader strategy to bring retro-branding to its city restaurants.",
+          "source": "Urban Milwaukee",
+          "date": "Mon Oct 12, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/12/have-it-your-way-new-burger-king-planned-for-south-side/"
+        },
+        {
+          "name": "New Halo Cafe",
+          "type": "renovation",
+          "location": "Historic Mitchell Street Neighborhood, Milwaukee, WI",
+          "status": "Announced",
+          "developer": null,
+          "architect": null,
+          "scale": "Commercial cafe",
+          "summary": "A blighted building in Milwaukee's Historic Mitchell Street Neighborhood on the South Side is slated to be transformed into the new Halo Cafe. This project aims to revitalize the street and bring a new commercial establishment to the area.",
+          "source": "Urban Milwaukee",
+          "date": "Mon Oct 12, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/12/blighted-south-side-building-will-become-new-cafe/"
+        },
+        {
+          "name": "Forensic Science Facility",
+          "type": "ground-up",
+          "location": "Milwaukee, WI",
+          "status": "Grand opening",
+          "developer": null,
+          "architect": null,
+          "scale": "$245 Million facility",
+          "summary": "A new state-of-the-art $245 million forensic science facility for the Milwaukee County Medical Examiner and the State Crime Lab has been celebrated by officials. This significant project is described as a 'watershed moment' for forensic science in the region.",
+          "source": "Urban Milwaukee",
+          "date": "Sun Oct 11, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/11/new-245-million-forensic-science-facility-is-a-watershed-moment/"
+        },
+        {
+          "name": "Walnut Way Community Solar Project",
+          "type": "ground-up",
+          "location": "Walnut Way, Milwaukee, WI",
+          "status": "Funded",
+          "developer": "Walnut Way Conservation Corp",
+          "architect": null,
+          "scale": "$1.1 Million project",
+          "summary": "The Walnut Way Conservation Corp has secured $1.1 million in funding for a new community solar project in Milwaukee's Walnut Way neighborhood. This initiative aims to empower the community through local ownership of power assets.",
+          "source": "Urban Milwaukee",
+          "date": "Sat Oct 10, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/10/walnut-way-secures-1-1-million-to-fund-community-solar-project/"
+        },
+        {
+          "name": "Mystic Bar (Former Angelo’s Piano Lounge)",
+          "type": "renovation",
+          "location": "Lower East Side, Milwaukee, WI",
+          "status": "Announced",
+          "developer": null,
+          "architect": null,
+          "scale": "Commercial bar renovation",
+          "summary": "A new upscale tarot-themed bar is planning a 'mystic makeover' for the former Angelo’s Piano Lounge on Milwaukee's Lower East Side. This project involves transforming a legendary local establishment into a new commercial venue.",
+          "source": "Urban Milwaukee",
+          "date": "Sat Oct 10, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/10/new-bar-plots-a-mystic-makeover-for-former-angelos-piano-bar/"
+        },
+        {
+          "name": "Residential and Commercial Development (620 Ryan Road)",
+          "type": "master-plan",
+          "location": "Pewaukee, WI",
+          "status": "Proposed",
+          "developer": "JD McCormick Properties",
+          "architect": null,
+          "scale": "313 residential units · fast-food restaurant · convenience store · clubhouse · swimming pool",
+          "summary": "JD McCormick Properties is proposing a significant mixed-use development at 620 Ryan Road in Pewaukee, featuring 313 residential units, a convenience store, and a fast-food restaurant. The plans, which also include a clubhouse and swimming pool, have been submitted to the village’s Plan Commission for review.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Oct 12, 2026",
+          "link": "https://biztimes.com/mixed-use-development-proposed-in-pewaukee/"
+        },
+        {
+          "name": "Butter’d Up Kitchen & Bar (Rebrand of Habanero’s)",
+          "type": "renovation",
+          "location": "Greenfield, WI",
+          "status": "Proposed",
+          "developer": null,
+          "architect": null,
+          "scale": "Commercial restaurant exterior refresh and rebrand",
+          "summary": "The Habanero’s Mexican Restaurant & Margarita House in Greenfield is planning a rebranding and renovation, to become Butter’d Up Kitchen & Bar. The project includes an exterior refresh of the building and has been submitted to the city’s Plan Commission for approval.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Oct 12, 2026",
+          "link": "https://biztimes.com/greenfield-restaurant-plans-rebrand-as-butterd-up-kitchen-bar/"
+        },
+        {
+          "name": "Hops & Pops Drive-Thru Beverage Store",
+          "type": "ground-up",
+          "location": "Slinger, WI",
+          "status": "Proposed",
+          "developer": "Hops & Pops LLC",
+          "architect": null,
+          "scale": "Commercial drive-thru store",
+          "summary": "Hops & Pops LLC is planning a new drive-thru beverage store in Slinger, to be located within the Windy Hill Condominium development. The proposal, which would allow customers to browse from their vehicles, has been filed with the village’s Plan Commission.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Oct 12, 2026",
+          "link": "https://biztimes.com/drive-thru-beverage-store-planned-in-slinger/"
+        }
+      ]
+    },
+    {
       "date": "2026-09-24T17:47:05.944Z",
       "editionDate": "September 24, 2026",
       "projectCount": 3,
@@ -685,65 +796,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Wed, 24 Jun 2026",
           "link": "https://biztimes.com/manufacturer-plans-major-expansion-in-waukesha/"
-        }
-      ]
-    },
-    {
-      "date": "2026-06-22T17:27:11.802Z",
-      "editionDate": "June 22, 2026",
-      "projectCount": 4,
-      "projects": [
-        {
-          "name": "Luxury Hotel Conversion (Former Auto Dealership)",
-          "type": "renovation",
-          "location": "Downtown, Milwaukee, WI",
-          "status": "Files To Open",
-          "developer": null,
-          "architect": null,
-          "scale": null,
-          "summary": "A luxury hotel, developed through the conversion of a 1920s auto dealership, has filed for its opening in Downtown Milwaukee, indicating it will soon welcome its first guests.",
-          "source": "Urban Milwaukee",
-          "date": "Fri Jun 19, 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/19/long-anticipated-downtown-hotel-files-to-open/"
-        },
-        {
-          "name": "Downer Theatre Renovation",
-          "type": "renovation",
-          "location": "Milwaukee, WI",
-          "status": "Capital campaign launched",
-          "developer": "Milwaukee Film",
-          "architect": null,
-          "scale": "$8 million capital campaign",
-          "summary": "Milwaukee Film has launched an $8 million capital campaign to fund the renovation of the historic Downer Theatre, a project announced after the organization purchased the venue for $1.55 million.",
-          "source": "BizTimes Milwaukee",
-          "date": "Mon Jun 22, 2026",
-          "link": "https://biztimes.com/milwaukee-film-gets-500000-donation-from-herzfeld-foundation-for-downer-theatre-capital-campaign/"
-        },
-        {
-          "name": "4448-4450 N. Oakland Ave. Affordable Housing Project",
-          "type": "ground-up",
-          "location": "Shorewood, WI",
-          "status": "Approved by Village",
-          "developer": "Spoerl Commercial LLC",
-          "architect": null,
-          "scale": "19 units",
-          "summary": "The Village of Shorewood has approved plans by Spoerl Commercial LLC for a 19-unit affordable housing project at 4448-4450 N. Oakland Ave., on the site of a former municipal parking lot.",
-          "source": "BizTimes Milwaukee",
-          "date": "Mon Jun 22, 2026",
-          "link": "https://biztimes.com/some-shorewood-residents-object-to-site-for-affordable-housing-project-fret-loss-of-parking-lot/"
-        },
-        {
-          "name": "Storage Five Self-Storage Facility",
-          "type": "renovation",
-          "location": "West Allis, WI",
-          "status": "Plans filed with the city",
-          "developer": "Storage Five",
-          "architect": null,
-          "scale": "133,532 sqft · 884+ units",
-          "summary": "Storage Five has filed plans with the city of West Allis to renovate and expand an existing 133,532-square-foot building into a multi-story, climate-controlled self-storage facility, offering over 884 units.",
-          "source": "BizTimes Milwaukee",
-          "date": "Mon Jun 22, 2026",
-          "link": "https://biztimes.com/self-storage-facility-planned-in-west-allis/"
         }
       ]
     }
