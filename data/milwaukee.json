@@ -1,6 +1,65 @@
 {
   "editions": [
     {
+      "date": "2026-10-15T17:39:14.290Z",
+      "editionDate": "October 15, 2026",
+      "projectCount": 4,
+      "projects": [
+        {
+          "name": "Milwaukee Air Cargo Center (MACC)",
+          "type": "ground-up",
+          "location": "Mitchell International Airport, Milwaukee, WI",
+          "status": "Grand opening",
+          "developer": "Milwaukee County (public-private partnership)",
+          "architect": null,
+          "scale": "333,545 sqft · $80 million",
+          "summary": "A new $80 million, 333,545-square-foot air cargo facility has opened at Milwaukee Mitchell International Airport. Developed through a public-private partnership, the center aims to significantly boost the region's air freight traffic by offering a lower-cost and more efficient alternative to Chicago O’Hare.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu Oct 15, 2026",
+          "link": "https://biztimes.com/new-air-cargo-center-opens-at-mitchell-international-seeks-tenants-to-build-out-freight-business/"
+        },
+        {
+          "name": "Microsoft Data Center Campus",
+          "type": "master-plan",
+          "location": "Mount Pleasant, WI",
+          "status": "Village planners back revised plan",
+          "developer": "Microsoft",
+          "architect": null,
+          "scale": "More than 5.8 million sqft",
+          "summary": "Microsoft has received backing from village planners for a revised plan for its data center campus in Mount Pleasant. The updated proposal features fewer buildings but expands the overall footprint to more than 5.8 million square feet of space, indicating a significant ongoing development.",
+          "source": "Urban Milwaukee",
+          "date": "Thu Oct 15, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/15/microsoft-shrinks-data-center-count-grows-footprint-in-mount-pleasant/"
+        },
+        {
+          "name": "Milwaukee, Racine, Kenosha Commuter Rail",
+          "type": "master-plan",
+          "location": "Milwaukee, Racine, Kenosha, WI",
+          "status": "Awaits federal funding",
+          "developer": null,
+          "architect": null,
+          "scale": "Regional commuter rail system",
+          "summary": "A commuter rail plan connecting Milwaukee, Racine, and Kenosha is advancing, with the project now awaiting federal funding. This significant infrastructure proposal aims to serve numerous cities in Southeastern Wisconsin and potentially connect to Chicago’s Metra line.",
+          "source": "Urban Milwaukee",
+          "date": "Wed Oct 14, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/14/milwaukee-racine-kenosha-train-awaits-federal-funding/"
+        },
+        {
+          "name": "Kinnickinnic Apartment Complex",
+          "type": "ground-up",
+          "location": "Kinnickinnic (likely Bay View), Milwaukee, WI",
+          "status": "Plans revealed",
+          "developer": null,
+          "architect": null,
+          "scale": "New apartment complex",
+          "summary": "Redevelopment plans have been publicly revealed for a new apartment complex proposed on Kinnickinnic Avenue. The developer, who is also involved in a nearby library redevelopment project, is plotting this significant residential building in the area.",
+          "source": "Urban Milwaukee",
+          "date": "Tue Oct 13, 2026",
+          "link": "https://urbanmilwaukee.com/2026/10/13/redevelopment-plans-revealed-for-site-of-100000-parts/"
+        }
+      ]
+    },
+    {
       "date": "2026-10-12T21:30:20.639Z",
       "editionDate": "October 12, 2026",
       "projectCount": 8,
@@ -711,91 +770,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Sun Jun 28, 2026",
           "link": "https://biztimes.com/these-62-projects-are-shaping-the-future-of-southeastern-wisconsin/"
-        }
-      ]
-    },
-    {
-      "date": "2026-06-25T15:40:58.812Z",
-      "editionDate": "June 25, 2026",
-      "projectCount": 6,
-      "projects": [
-        {
-          "name": "Missing Middle Housing Development",
-          "type": "ground-up",
-          "location": "South Side, Milwaukee, WI",
-          "status": "Announced",
-          "developer": null,
-          "architect": null,
-          "scale": "Affordable townhomes",
-          "summary": "Milwaukee County is seeking proposals from developers to build affordable townhomes on vacant land at S. 6th Street, aiming to provide 'missing middle' housing options on the South Side.",
-          "source": "Urban Milwaukee",
-          "date": "Wed, 24 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/24/mke-county-county-seeks-missing-middle-housing-for-south-side-land/"
-        },
-        {
-          "name": "Microsoft Data Center Campus",
-          "type": "ground-up",
-          "location": "Mount Pleasant, WI",
-          "status": "Construction completed (first center), Construction started (second center), Approved (up to 15 centers)",
-          "developer": "Microsoft",
-          "architect": null,
-          "scale": "Multiple data centers",
-          "summary": "Microsoft has completed construction of its first data center in Mount Pleasant and has commenced building a second. The Village Board previously approved plans that allow for the construction of up to 15 data centers on the site.",
-          "source": "Urban Milwaukee",
-          "date": "Wed, 24 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/24/microsoft-finishes-constructing-mount-pleasant-data-center-plans-more/"
-        },
-        {
-          "name": "Mitchell Park Domes Redevelopment Project",
-          "type": "renovation",
-          "location": "Milwaukee, WI",
-          "status": "Public review open",
-          "developer": null,
-          "architect": null,
-          "scale": "Redevelopment project",
-          "summary": "The redevelopment project for the Mitchell Park Domes is gaining strong donor support, with naming rights already awarded for the lobby and the Little Sprouts Dome, indicating ongoing progress and public engagement.",
-          "source": "Urban Milwaukee",
-          "date": "Wed, 24 Jun 2026",
-          "link": "https://urbanmilwaukee.com/2026/06/24/domes-win-strong-donor-support/"
-        },
-        {
-          "name": "Escapology Locations",
-          "type": "renovation",
-          "location": "Historic Third Ward, Milwaukee, WI; Brookfield, WI",
-          "status": "Announced",
-          "developer": "Jerry Benson",
-          "architect": null,
-          "scale": "Two commercial entertainment venues",
-          "summary": "Escapology, an escape room adventure business, has announced plans to open two new Wisconsin locations. These will be situated in Milwaukee's Historic Third Ward and in Brookfield, expanding its presence in the state.",
-          "source": "BizTimes Milwaukee",
-          "date": "Thu, 25 Jun 2026",
-          "link": "https://biztimes.com/escapology-to-open-locations-in-third-ward-brookfield/"
-        },
-        {
-          "name": "Amazon Logistics Facility",
-          "type": "ground-up",
-          "location": "Sheboygan, WI",
-          "status": "Site purchased, Plans announced",
-          "developer": "Amazon.com Services LLC",
-          "architect": null,
-          "scale": "Logistics facility on 57-acre site",
-          "summary": "Amazon, through its subsidiary Amazon.com Services LLC, has acquired a 57-acre site in Sheboygan for $2 million. The company previously announced its intentions to construct a new logistics facility on the purchased land.",
-          "source": "BizTimes Milwaukee",
-          "date": "Wed, 24 Jun 2026",
-          "link": "https://biztimes.com/amazon-buys-sheboygan-site-for-2-million/"
-        },
-        {
-          "name": "The Gund Company Expansion",
-          "type": "ground-up",
-          "location": "Waukesha, WI",
-          "status": "Planning",
-          "developer": "The Gund Company",
-          "architect": null,
-          "scale": "110,000 sqft addition",
-          "summary": "The Gund Company, a manufacturer of composite materials, is planning a significant 110,000-square-foot expansion to its current 65,000-square-foot facility located at 809 Philip Dr. in Waukesha.",
-          "source": "BizTimes Milwaukee",
-          "date": "Wed, 24 Jun 2026",
-          "link": "https://biztimes.com/manufacturer-plans-major-expansion-in-waukesha/"
         }
       ]
     }
