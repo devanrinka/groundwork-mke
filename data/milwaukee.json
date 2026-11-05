@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-11-05T20:29:46.225Z",
+      "editionDate": "November 5, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Rockwell Automation Manufacturing Campus",
+          "type": "ground-up",
+          "location": "New Berlin, WI",
+          "status": "Announced",
+          "developer": "Rockwell Automation",
+          "architect": null,
+          "scale": "major manufacturing campus",
+          "summary": "Rockwell Automation plans to build a major new manufacturing campus in New Berlin, Wisconsin. This significant capital expenditure is part of the company's fiscal 2027 plans, indicating a large-scale commercial development for the Milwaukee area.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu Nov 05, 2026",
+          "link": "https://biztimes.com/rockwell-reports-moderate-2026-growth-eyeing-more-capital-spending-in-fiscal-2027/"
+        },
+        {
+          "name": "Milwaukee Art Museum Lubar Center for Drawings and Prints",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "Announced",
+          "developer": "Milwaukee Art Museum",
+          "architect": null,
+          "scale": "$10 million gift to establish center",
+          "summary": "The Milwaukee Art Museum received a $10 million gift from the Lubar family to establish a dedicated center for its extensive collection of drawings and prints. This initiative will support the preservation, study, and exhibition of over 35,000 works on paper, representing a major enhancement to the museum's facilities.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu Nov 05, 2026",
+          "link": "https://biztimes.com/milwaukee-art-museum-receives-10-million-gift-to-support-drawings-prints-collection/"
+        },
+        {
+          "name": "Kingdom Prep Lutheran High School Culinary Center",
+          "type": "renovation",
+          "location": "Wauwatosa, WI",
+          "status": "Grand opening",
+          "developer": "Kingdom Prep Lutheran High School",
+          "architect": null,
+          "scale": "$1 million+ renovation",
+          "summary": "Kingdom Prep Lutheran High School in Wauwatosa has opened its new culinary center, following a renovation project costing over $1 million. The upgraded facility, completed last month by VJS Construction Services and Catalyst Construction, aims to expand hands-on career training for students.",
+          "source": "BizTimes Milwaukee",
+          "date": "Thu Nov 05, 2026",
+          "link": "https://biztimes.com/kingdom-prep-lutheran-high-school-opens-new-culinary-center/"
+        }
+      ]
+    },
+    {
       "date": "2026-10-19T18:56:08.522Z",
       "editionDate": "October 19, 2026",
       "projectCount": 5,
@@ -737,52 +783,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Wed Jul 15, 2026",
           "link": "https://biztimes.com/fox-communities-credit-union-plans-second-location-for-southeastern-wisconsin/"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-09T15:57:53.562Z",
-      "editionDate": "July 9, 2026",
-      "projectCount": 3,
-      "projects": [
-        {
-          "name": "Bay View Site Development",
-          "type": "ground-up",
-          "location": "Bay View, Milwaukee, WI",
-          "status": "Announced",
-          "developer": "null",
-          "architect": "null",
-          "scale": "14-story tower",
-          "summary": "The City of Milwaukee is restarting its efforts to develop a long-vacant site in Bay View. A conceptual plan has been proposed for a 14-story tower with lake views, aiming to bring significant development to the prominent location.",
-          "source": "Urban Milwaukee",
-          "date": "Thu, 09 Jul 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/08/city-restarting-process-of-developing-long-vacant-bay-view-site/"
-        },
-        {
-          "name": "Bay View Affordable Development",
-          "type": "ground-up",
-          "location": "Bay View, Milwaukee, WI",
-          "status": "Key Approval",
-          "developer": "null",
-          "architect": "null",
-          "scale": "Affordable residential development",
-          "summary": "An affordable housing development located in Bay View has received a crucial municipal approval, despite some opposition. This significant milestone allows the project to move forward in the development process.",
-          "source": "Urban Milwaukee",
-          "date": "Tue, 07 Jul 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/07/bay-view-affordable-development-scores-key-approval-but-objections-remain/"
-        },
-        {
-          "name": "Dunkin' (Wauwatosa)",
-          "type": "renovation",
-          "location": "Wauwatosa, WI",
-          "status": "Permits filed",
-          "developer": "null",
-          "architect": "null",
-          "scale": "Commercial restaurant",
-          "summary": "A new Dunkin' location is proposed for a former Starbucks site at 151 N. Mayfair Road in Wauwatosa. A conditional use permit application has been filed with the city's Plan Commission for the renovation of the existing commercial building.",
-          "source": "BizTimes Milwaukee",
-          "date": "Thu, 09 Jul 2026",
-          "link": "https://biztimes.com/dunkin-donuts-planned-for-former-starbucks-location-in-wauwatosa/"
         }
       ]
     }
