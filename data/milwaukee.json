@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-11-24T00:31:18.503Z",
+      "editionDate": "November 24, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Milwaukee’s New Juvenile Prison (Youth and Family Justice Center)",
+          "type": "ground-up",
+          "location": "Northwest Side, Milwaukee, WI",
+          "status": "Grand opening",
+          "developer": null,
+          "architect": null,
+          "scale": "$65.6 million facility · 32 boys capacity",
+          "summary": "The new $65.6 million juvenile prison facility on Milwaukee’s Northwest Side has opened its doors, with the first youths arriving. This new facility marks a significant investment in juvenile justice infrastructure, capable of housing up to 32 boys.",
+          "source": "Urban Milwaukee",
+          "date": "Sun Nov 22, 2026",
+          "link": "https://urbanmilwaukee.com/2026/11/22/first-youths-arrive-at-milwaukees-new-juvenile-prison/"
+        },
+        {
+          "name": "Lake Park Bridge Rehab/Rebuild",
+          "type": "renovation",
+          "location": "Lake Park, Milwaukee County, WI",
+          "status": "Plans announced",
+          "developer": "Milwaukee County Parks",
+          "architect": null,
+          "scale": "Historic steel arch bridge built in 1893",
+          "summary": "Milwaukee County Parks is planning a significant project for the historic steel arch bridge in Lake Park, built in 1893. The project involves either rehabilitating the existing structure or potentially tearing it down and rebuilding it, signifying a major infrastructure undertaking.",
+          "source": "Urban Milwaukee",
+          "date": "Sun Nov 22, 2026",
+          "link": "https://urbanmilwaukee.com/2026/11/21/mke-county-parks-plans-rehab-of-historic-lake-park-bridge/"
+        },
+        {
+          "name": "Johnson Creek Data Center",
+          "type": "ground-up",
+          "location": "Johnson Creek, WI",
+          "status": "Planned",
+          "developer": null,
+          "architect": null,
+          "scale": "100,000 sqft · 40-acre site",
+          "summary": "A 100,000-square-foot data center is planned for development on a 40-acre site in Johnson Creek, located south of River Drive and west of County Highway Y. This new commercial facility will add to the growing data center presence in southern Wisconsin.",
+          "source": "BizTimes Milwaukee",
+          "date": "Mon Nov 23, 2026",
+          "link": "https://biztimes.com/100000-square-foot-data-center-planned-in-johnson-creek/"
+        }
+      ]
+    },
+    {
       "date": "2026-11-19T21:13:22.384Z",
       "editionDate": "November 19, 2026",
       "projectCount": 3,
@@ -737,52 +783,6 @@
           "source": "Urban Milwaukee",
           "date": "Fri 24, 2026",
           "link": "https://urbanmilwaukee.com/2026/07/24/mke-county-committee-squashes-courthouse-referendum/"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-20T15:05:16.082Z",
-      "editionDate": "July 20, 2026",
-      "projectCount": 3,
-      "projects": [
-        {
-          "name": "Milwaukee County Courthouse Project",
-          "type": "renovation",
-          "location": "Milwaukee County, Milwaukee, WI",
-          "status": "Public review open",
-          "developer": null,
-          "architect": null,
-          "scale": "$897 million",
-          "summary": "A proposed $897 million project for the Milwaukee County Courthouse is facing political challenges, with the finance chair attempting to block a public referendum that would allow the project to move forward. This significant public undertaking is currently in a critical public approval phase.",
-          "source": "Urban Milwaukee",
-          "date": "Jul 19, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/18/mke-county-finance-chair-moves-to-block-courthouse-referendum/"
-        },
-        {
-          "name": "Amani Homeownership TIF",
-          "type": "ground-up",
-          "location": "Amani, Milwaukee, WI",
-          "status": "Announced",
-          "developer": "CDA",
-          "architect": null,
-          "scale": "95 houses",
-          "summary": "A proposed Tax Incremental Financing (TIF) district in Milwaukee's Amani neighborhood aims to spur the development of 95 new single-family homes. This initiative is designed to expand homeownership opportunities and is part of the Community Development Alliance's ongoing housing pipeline efforts.",
-          "source": "Urban Milwaukee",
-          "date": "Jul 17, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/17/amani-homeownership-tif-would-add-95-houses-to-cda-pipeline/"
-        },
-        {
-          "name": "Former Wausau Equipment Plant Conversion to Self-Storage",
-          "type": "renovation",
-          "location": "New Berlin Industrial Park, New Berlin, WI",
-          "status": "Announced",
-          "developer": "Cedarburg Storage Company LLC",
-          "architect": null,
-          "scale": "Former plant and headquarters",
-          "summary": "An affiliate of Cedarburg Storage Company LLC has acquired the former Wausau Equipment plant and headquarters in New Berlin. The site, vacated by Wausau Equipment, is expected to be redeveloped and converted into a new self-storage facility.",
-          "source": "BizTimes Milwaukee",
-          "date": "Jul 20, 2026",
-          "link": "https://biztimes.com/self-storage-company-buys-former-wausau-equipment-plant-and-hq-in-new-berlin/"
         }
       ]
     }
