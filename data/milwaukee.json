@@ -1,6 +1,52 @@
 {
   "editions": [
     {
+      "date": "2026-11-26T22:09:50.691Z",
+      "editionDate": "November 26, 2026",
+      "projectCount": 3,
+      "projects": [
+        {
+          "name": "Johnson Creek Data Center",
+          "type": "ground-up",
+          "location": "Johnson Creek, WI",
+          "status": "Public review open",
+          "developer": "Developer",
+          "architect": null,
+          "scale": "Data Center",
+          "summary": "A developer is proposing a smaller-scale data center project in Johnson Creek, Wisconsin. The proposal is currently under review, with discussions focusing on reducing power and water consumption compared to larger data center developments.",
+          "source": "Urban Milwaukee",
+          "date": "Nov 26, 2026",
+          "link": "https://urbanmilwaukee.com/2026/11/26/johnson-creek-weighs-smaller-data-center-in-era-of-big-backlash/"
+        },
+        {
+          "name": "Kenosha County Large-Scale Development and Solar Farm",
+          "type": "master-plan",
+          "location": "Bristol, Kenosha County, WI",
+          "status": "Plan Commission vote tabled",
+          "developer": null,
+          "architect": null,
+          "scale": "10,000 homes · Solar farm",
+          "summary": "A large-scale development proposal, including a solar farm and potentially 10,000 new homes in Bristol, Kenosha County, has been delayed by the Plan Commission. The commission tabled a vote amid concerns regarding stormwater management and tree removal associated with the project.",
+          "source": "Urban Milwaukee",
+          "date": "Nov 26, 2026",
+          "link": "https://urbanmilwaukee.com/2026/11/26/kenosha-county-solar-farm-delayed-as-bristol-seeks-more-answers/"
+        },
+        {
+          "name": "Metcalfe Lofts Affordable Housing",
+          "type": "renovation",
+          "location": "Milwaukee, WI",
+          "status": "City backed",
+          "developer": null,
+          "architect": null,
+          "scale": "76 units",
+          "summary": "The City of Milwaukee has backed the Metcalfe Lofts project, which involves the renovation of a former factory into 76 units of affordable housing. The unique plan also incorporates health services for future residents.",
+          "source": "Urban Milwaukee",
+          "date": "Nov 25, 2026",
+          "link": "https://urbanmilwaukee.com/2026/11/25/city-backs-metcalfe-lofts-affordable-housing/"
+        }
+      ]
+    },
+    {
       "date": "2026-11-24T00:31:18.503Z",
       "editionDate": "November 24, 2026",
       "projectCount": 3,
@@ -711,78 +757,6 @@
           "source": "BizTimes Milwaukee",
           "date": "Thu, 30 Jul 2026",
           "link": "https://biztimes.com/the-harvest-at-pabst-farms-cultivating-regional-growth-and-opportunity/"
-        }
-      ]
-    },
-    {
-      "date": "2026-07-27T15:38:27.274Z",
-      "editionDate": "July 27, 2026",
-      "projectCount": 5,
-      "projects": [
-        {
-          "name": "Oak Creek Affordable Housing Subdivision",
-          "type": "ground-up",
-          "location": "Oak Creek, Milwaukee County, WI",
-          "status": "Announced",
-          "developer": "Milwaukee County (implied)",
-          "architect": null,
-          "scale": "Affordable housing subdivision",
-          "summary": "Milwaukee County is pushing for federal funding to develop a new affordable housing subdivision in Oak Creek, aligning with County Executive David Crowley's broader strategy for housing initiatives.",
-          "source": "Urban Milwaukee",
-          "date": "Fri 24, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/24/mke-county-county-pushes-federal-funding-for-oak-creek-affordable-housing/"
-        },
-        {
-          "name": "Teutonia Avenue Lounge and Restaurant",
-          "type": "renovation",
-          "location": "Northside Shopping Center, Teutonia Avenue, Milwaukee, WI",
-          "status": "Seeks city approval",
-          "developer": null,
-          "architect": null,
-          "scale": "Commercial lounge and restaurant venue",
-          "summary": "A proposal for a new lounge and restaurant on Teutonia Avenue within a Northside Shopping Center is seeking city approval. The venue aims to offer brunch, live music, and cater to a 30-plus crowd.",
-          "source": "Urban Milwaukee",
-          "date": "Fri 24, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/24/lounge-and-restaurant-proposed-at-northside-shopping-center/"
-        },
-        {
-          "name": "Seeds of Health High School Expansion",
-          "type": "renovation",
-          "location": "Milwaukee, WI",
-          "status": "Announced",
-          "developer": "Seeds of Health",
-          "architect": null,
-          "scale": "High school expansion",
-          "summary": "Seeds of Health announced plans to close one of its high schools while expanding another, indicating significant changes to its educational facilities within Milwaukee Public Schools' partner network.",
-          "source": "Urban Milwaukee",
-          "date": "Fri 24, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/24/seeds-of-health-will-shutter-high-school-expand-another/"
-        },
-        {
-          "name": "Trap Kitchen Soul Food Restaurant",
-          "type": "renovation",
-          "location": "W. Becher St., Near South Side, Milwaukee, WI",
-          "status": "Planned",
-          "developer": null,
-          "architect": null,
-          "scale": "Commercial restaurant venue",
-          "summary": "A new soul food restaurant named Trap Kitchen is planned for a building on W. Becher Street in Milwaukee's Near South Side. The project involves transforming a space previously known for illegal after-hours parties into a legitimate dining establishment.",
-          "source": "Urban Milwaukee",
-          "date": "Fri 24, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/24/soul-food-restaurant-planned-for-near-south-side/"
-        },
-        {
-          "name": "Milwaukee County Courthouse Project",
-          "type": "master-plan",
-          "location": "Milwaukee County, WI",
-          "status": "Halted / Referendum squashed",
-          "developer": "Milwaukee County",
-          "architect": null,
-          "scale": "$897 million project",
-          "summary": "An $897 million Milwaukee County Courthouse project has hit a major roadblock after a county committee voted to block a referendum for its funding from appearing on the November ballot, potentially halting the project indefinitely.",
-          "source": "Urban Milwaukee",
-          "date": "Fri 24, 2026",
-          "link": "https://urbanmilwaukee.com/2026/07/24/mke-county-committee-squashes-courthouse-referendum/"
         }
       ]
     }
